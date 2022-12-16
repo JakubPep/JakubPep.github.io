@@ -1,0 +1,234 @@
+:root {
+    box-sizing: content-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.section__title {
+    margin: 0 -2rem 2rem -2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: black;
+    background-color: rgb(172, 195, 163);
+    text-align: center;
+}
+
+.subsection__title {
+    margin: 1rem auto 4rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    /* width: 50%; */
+    color: black;
+    background-color: rgb(172, 195, 163);
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+/* NAV STYLES */
+
+.ppip-top-bar {
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background-color: transparent;
+}
+
+.ppip-top-bar__logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/pracownia-logo.png);
+    background-size: cover;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.ppip-top-bar__menu {
+    display: flex;
+}
+
+.ppip-top-bar__menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+/* HERO STYLES */
+.ppip-hero {
+    height: 100vh;
+    background-image: url(../img/hero-image-large.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ABOUT STYLES */
+
+.ppip-about__element-text {
+    font-size: 1.2rem;
+}
+
+.ppip-about__element-image {
+    background-image: url(../img/sesja-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+
+.ppip-about__element-container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ppip-about__exp {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url(../img/sesja-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.ppip-about__exp-title {
+    width: 50%;
+}
+
+.ppip-about__exp-element {
+    padding: 1rem;
+    margin: 2rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+.ppip-about__exp-element-img {
+    height: 100px;
+    width: 100px;
+}
+
+.ppip-about__exp-element-name {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.ppip-about__exp-element-year {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.ppip-about__exp-element-desc {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.ppip-about__exp-element-small {
+    margin: 1rem auto;
+    padding: 1rem 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 1s;
+
+}
+
+.ppip-about__exp-element-small-img {
+    font-size: 2.2rem;
+    margin: 0 1rem;
+}
+
+.ppip-about__exp-element-small-year {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+.ppip-about__exp-element-small-desc {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+/* WORK STYLES */
+
+
+.ppip-work {
+    margin-bottom: 2rem
+}
+.ppip-work__quote {
+    border-right: 5px solid rgb(172, 195, 163);
+    border-left: 5px solid rgb(172, 195, 163);
+    padding-top: 0.9rem;
+    margin: 0 auto;
+}
+
+.ppip-work__quote-text {
+    margin: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.ppip-work__quote-author {
+    margin:0 1rem 0 0 ;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: end;
+}
+
+.ppip-work__elements-container {
+    margin-top: 3rem;
+}
+
+.ppip-work__element {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ppip-work__psycho {
+    background-image: url(../img/brain-background.png);
+    background-position: right;
+}
+
+.ppip-work__element-text {
+    font-size: 1.1rem;
+    margin: 1.5rem 1rem;
+}
+
+.ppip-work__element-question {
+    width: 50%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(172, 195, 163);
+    border-radius: 5px;
+}
+
+.ppip-work__psydiet {
+    background-image: url(../img/brain-background.png);
+    background-position: left;
+}
