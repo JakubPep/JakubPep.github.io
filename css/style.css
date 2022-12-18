@@ -50,6 +50,7 @@ a {
 .ppip-top-bar {
     height: 200px;
     width: 100%;
+    padding: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,23 +61,47 @@ a {
 
 .ppip-top-bar__logo {
     display: block;
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/pracownia-logo.png);
-    background-size: cover;
-    position: relative;
-    top: 30px;
-    left: 30px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(172, 195, 163);
+
+    padding-top: 150px;
+}
+
+.ppip-top-bar__logo-img {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(172, 195, 163);
+    border-radius: 0 0 125px 125px;
 }
 
 .ppip-top-bar__menu {
     display: flex;
+    transition: all 1s;
 }
 
 .ppip-top-bar__menu-link {
     text-decoration: none;
     color: black;
     font-size: 1.4rem;
+}
+
+/* TOP MENU STICKY */
+
+.ppip-top-bar__menu--sticky {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    height: 50px;
+    width: 60%;
+    background-color: rgb(172, 195, 163);
+}
+
+.ppip-top-bar__container {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(172, 195, 163);
+    display: none;
 }
 
 /* HERO STYLES */
