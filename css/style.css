@@ -59,13 +59,16 @@ a {
     background-color: transparent;
 }
 
+.ppip-top-bar.ppip-top-bar--sticky {
+    height: 60px;
+    background-color: rgb(172, 195, 163);
+    transition: all 1s;
+}
+
 .ppip-top-bar__logo {
     display: block;
-    width: 250px;
-    height: 250px;
     background-color: rgb(172, 195, 163);
-
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .ppip-top-bar__logo-img {
@@ -76,7 +79,7 @@ a {
 }
 
 .ppip-top-bar__menu {
-    display: flex;
+    display: none;
     transition: all 1s;
 }
 
@@ -89,20 +92,10 @@ a {
 /* TOP MENU STICKY */
 
 .ppip-top-bar__menu--sticky {
-    position: fixed;
-    top: 0;
-    right: 20px;
-    height: 50px;
-    width: 60%;
-    background-color: rgb(172, 195, 163);
+    display: flex;
 }
 
-.ppip-top-bar__container {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(172, 195, 163);
-    display: none;
-}
+
 
 /* HERO STYLES */
 .ppip-hero {
