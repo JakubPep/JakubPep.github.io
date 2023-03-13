@@ -1,10 +1,14 @@
+import React from "react";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-   <> <h1>Dominika Szałkowska</h1>
-  <h2>psycholog i psychodietetyk</h2></>
-  
-    );
+    <>
+      <Hero 
+      height="1000px"
+      />
+    </>
+  );
 }
 
 export default App;
