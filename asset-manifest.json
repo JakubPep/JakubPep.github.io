@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JakubPep.github.io/static/css/main.2f5602c6.css",
-    "main.js": "/JakubPep.github.io/static/js/main.dabe9db1.js",
-    "static/media/heroPhoto.jpg": "/JakubPep.github.io/static/media/heroPhoto.86ec801e8388787808e5.jpg",
-    "static/media/pracownia-logo.png": "/JakubPep.github.io/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
-    "index.html": "/JakubPep.github.io/index.html",
-    "main.2f5602c6.css.map": "/JakubPep.github.io/static/css/main.2f5602c6.css.map",
-    "main.dabe9db1.js.map": "/JakubPep.github.io/static/js/main.dabe9db1.js.map"
+    "main.css": "/static/css/main.2f5602c6.css",
+    "main.js": "/static/js/main.563eedda.js",
+    "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
+    "static/media/pracownia-logo.png": "/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
+    "index.html": "/index.html",
+    "main.2f5602c6.css.map": "/static/css/main.2f5602c6.css.map",
+    "main.563eedda.js.map": "/static/js/main.563eedda.js.map"
   },
   "entrypoints": [
     "static/css/main.2f5602c6.css",
-    "static/js/main.dabe9db1.js"
+    "static/js/main.563eedda.js"
   ]
 }
