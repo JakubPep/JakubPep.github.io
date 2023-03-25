@@ -5,8 +5,9 @@ function App() {
   return (
     <>
       <Hero 
-      height="1000px"
+      height="800px"
       />
+      
     </>
   );
 }
