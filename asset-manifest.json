@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pracownia/static/css/main.2f5602c6.css",
-    "main.js": "/pracownia/static/js/main.0c00abb4.js",
-    "static/media/heroPhoto.jpg": "/pracownia/static/media/heroPhoto.86ec801e8388787808e5.jpg",
-    "static/media/pracownia-logo.png": "/pracownia/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
-    "index.html": "/pracownia/index.html",
-    "main.2f5602c6.css.map": "/pracownia/static/css/main.2f5602c6.css.map",
-    "main.0c00abb4.js.map": "/pracownia/static/js/main.0c00abb4.js.map"
+    "main.css": "/JakubPep.github.io/static/css/main.2f5602c6.css",
+    "main.js": "/JakubPep.github.io/static/js/main.dabe9db1.js",
+    "static/media/heroPhoto.jpg": "/JakubPep.github.io/static/media/heroPhoto.86ec801e8388787808e5.jpg",
+    "static/media/pracownia-logo.png": "/JakubPep.github.io/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
+    "index.html": "/JakubPep.github.io/index.html",
+    "main.2f5602c6.css.map": "/JakubPep.github.io/static/css/main.2f5602c6.css.map",
+    "main.dabe9db1.js.map": "/JakubPep.github.io/static/js/main.dabe9db1.js.map"
   },
   "entrypoints": [
     "static/css/main.2f5602c6.css",
-    "static/js/main.0c00abb4.js"
+    "static/js/main.dabe9db1.js"
   ]
 }
