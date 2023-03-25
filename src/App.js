@@ -4,10 +4,7 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <>
-      <Hero 
-      height="800px"
-      />
-      
+      <Hero height="800px" />
     </>
   );
 }
