@@ -4,3 +4,8 @@ body {
     overflow-x: hidden;
 }
 
+.section-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
