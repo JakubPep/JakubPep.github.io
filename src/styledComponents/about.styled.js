@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 46px;
+    margin-bottom: 60px;
 `
 
 export const AboutDescription = styled.div`

@@ -5,7 +5,7 @@ import {
   AboutPhoto,
 } from "../styledComponents/about.styled";
 
-const About = (props) => {
+const About = () => {
   return (
     <>
       <AboutContainer>
