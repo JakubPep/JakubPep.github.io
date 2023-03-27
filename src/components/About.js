@@ -2,6 +2,7 @@ import React from "react";
 import {
   AboutContainer,
   AboutDescription,
+  AboutPhoto,
 } from "../styledComponents/about.styled";
 
 const About = (props) => {
@@ -32,6 +33,7 @@ const About = (props) => {
             fringilla ligula. Morbi accumsan in.
           </p>
         </AboutDescription>
+        <AboutPhoto />
       </AboutContainer>
     </>
   );
