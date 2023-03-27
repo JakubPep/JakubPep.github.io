@@ -2,5 +2,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
