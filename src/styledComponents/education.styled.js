@@ -14,7 +14,6 @@ export const EducationContainer = styled.div`
     margin-bottom: 30px;
     align-self: center;
     text-align: center;
-    letter-spacing: 5px;
   }
 `;
 
@@ -60,10 +59,11 @@ export const SchoolLogo = styled.div`
 
 export const SchoolTitles = styled.div`
   text-align: center;
-  max-width: 250px;
+  max-width: 300px;
 
   .school-name {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 600;
     color: ${COLORS.font_black};
     margin: 0px;
   }
@@ -75,8 +75,8 @@ export const SchoolTitles = styled.div`
 `;
 
 export const SchoolDescription = styled.p`
-    font-size: 20px;
-    margin: 0;
-    max-width: 350px;
-    text-align: center;
-`
+  font-size: 20px;
+  margin: 0;
+  max-width: 350px;
+  text-align: center;
+`;
