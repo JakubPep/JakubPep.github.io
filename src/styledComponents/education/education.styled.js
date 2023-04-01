@@ -7,6 +7,9 @@ export const EducationContainer = styled.div`
 
   padding: 60px;
 
+  align-items: center;
+  justify-content: center;
+
   background-color: ${COLORS.light_pink};
 
   h3 {
@@ -20,10 +23,12 @@ export const EducationContainer = styled.div`
 export const SchoolContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 60px;
 
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-between;
+  gap: 40px;
 `;
 
 export const SchoolElements = styled.div`
@@ -33,7 +38,7 @@ export const SchoolElements = styled.div`
   min-height: 200px;
   min-width: 300px;
 
-  padding: 25px;
+  padding: 20px;
 
   background-color: ${COLORS.white_opacity};
   border: 1px solid ${COLORS.font_black};

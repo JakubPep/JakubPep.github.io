@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { COLORS } from "../Vars";
-import circlePhoto from "../images/aboutPhoto.jpg";
 
 export const AboutContainer = styled.div`
   display: flex;

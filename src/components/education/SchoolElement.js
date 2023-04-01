@@ -13,10 +13,7 @@ const SchoolElement = (props) => {
       <SchoolElements>
         <SchoolTitleContainer>
           <SchoolLogo logoUrl={props.logoUrl} />
-          <SchoolTitle
-            univName={props.univName}
-            univYears={props.univYears}
-          />
+          <SchoolTitle univName={props.univName} univYears={props.univYears} />
         </SchoolTitleContainer>
         <SchoolDescription>
           <p>{props.descr}</p>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS } from "../Vars";
 
 export const CirclePhoto = styled.div`
   width: ${(props) => props.width};
@@ -9,7 +10,9 @@ export const CirclePhoto = styled.div`
   background-size: cover;
   background-position: center;
 
-  border: 7px solid;
+  border: ${(props) => props.borderWidth} solid;
   border-color: ${(props) => props.borderColor};
   border-radius: 50%;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 `;

@@ -39,6 +39,7 @@ const About = () => {
           height="30vw"
           width="30vw"
           photoUrl={aboutPhoto}
+          borderWidth='7px'
           borderColor={COLORS.light_pink}
         />
       </AboutContainer>
