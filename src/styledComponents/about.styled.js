@@ -25,16 +25,3 @@ export const AboutDescription = styled.div`
     margin: 0;
   }
 `;
-
-export const AboutPhoto = styled.div`
-  width: 30vw;
-  height: 30vw;
-  margin: 10px;
-
-  background-image: url(${circlePhoto});
-  background-size: cover;
-  background-position: center;
-
-  border: 7px solid ${COLORS.light_pink};
-  border-radius: 50%;
-`;

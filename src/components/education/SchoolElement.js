@@ -4,7 +4,7 @@ import {
   SchoolTitleContainer,
   SchoolLogo,
   SchoolDescription,
-} from "../styledComponents/education.styled";
+} from "../../styledComponents/education/education.styled";
 import SchoolTitle from "./SchoolTitle";
 
 const SchoolElement = (props) => {

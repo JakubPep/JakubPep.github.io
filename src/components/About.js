@@ -2,8 +2,10 @@ import React from "react";
 import {
   AboutContainer,
   AboutDescription,
-  AboutPhoto,
 } from "../styledComponents/about.styled";
+import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
+import aboutPhoto from "../images/aboutPhoto.jpg";
+import { COLORS } from "../Vars";
 
 const About = () => {
   return (
@@ -33,7 +35,12 @@ const About = () => {
             fringilla ligula. Morbi accumsan in.
           </p>
         </AboutDescription>
-        <AboutPhoto />
+        <CirclePhoto
+          height="30vw"
+          width="30vw"
+          photoUrl={aboutPhoto}
+          borderColor={COLORS.light_pink}
+        />
       </AboutContainer>
     </>
   );

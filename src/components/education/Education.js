@@ -2,12 +2,13 @@ import React from "react";
 import {
   EducationContainer,
   SchoolContainer,
-} from "../styledComponents/education.styled";
+} from "../../styledComponents/education/education.styled";
 import SchoolElement from "./SchoolElement";
-import uniTerra from "../images/svg/logo-uniterra.svg";
-import uam from "../images/svg/logo-uam.svg";
+import uniTerra from "../../images/svg/logo-uniterra.svg";
+import uam from "../../images/svg/logo-uam.svg";
+import Courses from "./Courses";
 
-const Education = (props) => {
+const Education = () => {
   return (
     <>
       <EducationContainer>
@@ -26,6 +27,7 @@ const Education = (props) => {
             descr="Dietetyka. 3-letnie studia licencjackie. Specjalizacja: dietetyka kliniczna."
           />
         </SchoolContainer>
+        <Courses />
       </EducationContainer>
     </>
   );

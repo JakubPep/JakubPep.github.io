@@ -1,5 +1,5 @@
 import React from "react";
-import { SchoolTitles } from "../styledComponents/education.styled";
+import { SchoolTitles } from "../../styledComponents/education/education.styled";
 
 const SchoolTitle = (props) => {
     return(

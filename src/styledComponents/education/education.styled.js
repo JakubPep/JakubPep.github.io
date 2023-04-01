@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
+import { COLORS } from "../../Vars";
 
 export const EducationContainer = styled.div`
   display: flex;
