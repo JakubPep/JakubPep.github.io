@@ -3,7 +3,7 @@ import { COLORS } from "../../Vars";
 
 export const CoursesContainer = styled.div`
   display: flex;
-  width: 80%;
+  width: 90%;
 
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const CourseRight = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   min-width: 50%;
-  max-width: 65%;
+  max-width: 60%;
   gap: 20px;
 `;
 
