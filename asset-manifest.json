@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8707574e.css",
-    "main.js": "/static/js/main.56feb7fc.js",
+    "main.css": "/static/css/main.5b9ef30a.css",
+    "main.js": "/static/js/main.94d6c48e.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
     "static/media/pracownia-logo.png": "/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
+    "static/media/plate-photo.png": "/static/media/plate-photo.a117fc2fc839381931e1.png",
+    "static/media/brain-photo.png": "/static/media/brain-photo.99054bea2247dab53283.png",
     "static/media/logo-uam.svg": "/static/media/logo-uam.bace46c77c1738074f9d497302545650.svg",
     "static/media/logo-uniterra.svg": "/static/media/logo-uniterra.53d485f15aa4afa903929bed79e3f877.svg",
     "index.html": "/index.html",
-    "main.8707574e.css.map": "/static/css/main.8707574e.css.map",
-    "main.56feb7fc.js.map": "/static/js/main.56feb7fc.js.map"
+    "main.5b9ef30a.css.map": "/static/css/main.5b9ef30a.css.map",
+    "main.94d6c48e.js.map": "/static/js/main.94d6c48e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8707574e.css",
-    "static/js/main.56feb7fc.js"
+    "static/css/main.5b9ef30a.css",
+    "static/js/main.94d6c48e.js"
   ]
 }
