@@ -15,7 +15,6 @@ export const EducationContainer = styled.div`
   h3 {
     width: 75vw;
     margin-bottom: 30px;
-    align-self: center;
     text-align: center;
   }
 `;
@@ -23,12 +22,12 @@ export const EducationContainer = styled.div`
 export const SchoolContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   margin-top: 40px;
   margin-bottom: 60px;
 
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 60px;
 `;
 
 export const SchoolElements = styled.div`

@@ -22,7 +22,7 @@ width: 75vh;
 border-radius: 50%;
 
 position: absolute;
-top: 10vh;
+top: 10%;
 left: 50%;
 
 background: url(${logoImage}), ${COLORS.light_green_opacity};

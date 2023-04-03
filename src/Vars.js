@@ -1,4 +1,5 @@
 export const COLORS = {
+  dark_pink: "#DF707A",
   light_green: "#DCDEC9",
   light_green_opacity: "#DCDEC9D9",
   light_pink: "#DFBEC1",

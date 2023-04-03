@@ -23,11 +23,11 @@ const Courses = () => {
     <>
       <CoursesContainer>
         <CirclePhoto
-          height="20vw"
-          width="20vw"
+          height="25vw"
+          width="25vw"
           photoUrl={coursesPhoto}
           borderColor={COLORS.font_black}
-          borderWidth="4px"
+          borderWidth="2px"
         />
         <CourseRight>
           <Course courseName="Kurs zorganizowany przez ministerstwo kultury i rozwoju w temacie pomocy niepełnoletnim z ich zdrowiem psychicznym." />

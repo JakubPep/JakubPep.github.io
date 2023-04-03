@@ -8,6 +8,8 @@ const Hero = (props) => {
     height={props.height}>
       <HeroImage ></HeroImage>
       <HeroLogo></HeroLogo>
+      
+      
       </HeroContainer>
     </>
   );
