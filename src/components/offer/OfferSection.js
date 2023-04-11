@@ -1,28 +1,52 @@
 import React from "react";
 import {
   Offer,
-  OfferList,
   OfferListContainer,
 } from "../../styledComponents/offerStyled/offerSection.styled";
+import {
+  OfferDescr,
+  OfferDescrContainer,
+} from "../../styledComponents/offerStyled/offerActive.styled";
 
-const OfferSection = () => {
+const OfferSection = (props) => {
   return (
     <>
-      <OfferListContainer>
-        <h3 className="section-title">Oferta</h3>
+      <OfferDescrContainer>
+        <OfferListContainer>
+          <h3 className="section-title">Oferta</h3>
           <Offer>
             <p className="offer-name">konsultacja psychologiczna</p>
+            {/* <OfferDescr>
+              <h4>{props.offerDescrTitle}</h4>
+              <p>Lorem qui laborum exercitation officia consequat ea.</p>
+              <p>
+                Cillum magna consequat anim esse Lorem esse deserunt officia
+                consequat. Sit dolore deserunt ea ipsum eiusmod ipsum cillum
+                aliqua aute sunt ipsum labore minim. Quis eu veniam tempor
+                dolore do magna voluptate. Et et elit aliquip tempor deserunt
+                enim cillum magna occaecat minim irure irure sunt. Lorem non non
+                duis amet proident minim veniam. Commodo labore consequat esse
+                elit deserunt quis.
+              </p>
+            </OfferDescr> */}
           </Offer>
-          <Offer>
-           <p>Jadłospis 7-dniowy</p>
-           </Offer>
-          <Offer>
-            <p>Konsultacja Psychodietetyczna</p>
-          </Offer>
-          <Offer />
-          <Offer />
-          <Offer />
-      </OfferListContainer>
+          
+          
+        </OfferListContainer>
+        <OfferDescr>
+              <h4>{props.offerDescrTitle}</h4>
+              <p>Lorem qui laborum exercitation officia consequat ea.</p>
+              <p>
+                Cillum magna consequat anim esse Lorem esse deserunt officia
+                consequat. Sit dolore deserunt ea ipsum eiusmod ipsum cillum
+                aliqua aute sunt ipsum labore minim. Quis eu veniam tempor
+                dolore do magna voluptate. Et et elit aliquip tempor deserunt
+                enim cillum magna occaecat minim irure irure sunt. Lorem non non
+                duis amet proident minim veniam. Commodo labore consequat esse
+                elit deserunt quis.
+              </p>
+            </OfferDescr>
+      </OfferDescrContainer>
     </>
   );
 };

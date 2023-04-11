@@ -3,48 +3,45 @@ import { COLORS } from "../../Vars";
 
 export const OfferListContainer = styled.div`
   min-height: 500px;
-  width: 45%;
+  width: 50%;
   padding-bottom: 100px;
-
-  display: flex;
-  flex-direction: column;
-align-items: flex-end;
 
   background-color: ${COLORS.light_pink};
   border-radius: 0 165px 165px 0;
   h3.section-title {
     padding: 60px;
-    color: ${COLORS.dark_pink};
-    align-self: flex-start;
+    color: #fff;
+    
   }
 `;
 
 export const Offer = styled.div`
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 60px;
   min-width: 310px;
   width: 90%;
-  left: 30px;
+  left: 13%;
   background-color: white;
   margin-bottom: 20px;
   border: 2px solid ${COLORS.light_pink};
   border-radius: 25vh;
   transition: left 0.7s ease;
-  p {
-    color: ${COLORS.dark_pink};
-    margin-bottom: auto;
-    margin-top: auto;
+  p.offer-name {
+    color: ${COLORS.font_black};
+    margin-top: 0.85rem;
+    margin-bottom: 0.85rem;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
   :hover {
-    left: 60px;
+    left: 17%;
+  }
+  :active {
+    background-color: ${COLORS.dark_pink};
+    p{
+        color: #fff;
+    }
   }
 `;
