@@ -4,6 +4,7 @@ import { PsychoElement } from "../styledComponents/psycho.styled";
 import { COLORS } from "../Vars";
 import brainPhoto from "../images/brain-photo.png"
 import platePhoto from "../images/plate-photo.png"
+import forkPhoto from "../images/fork-photo.png"
 
 const PsychoSection = () => {
   return (
@@ -27,7 +28,7 @@ const PsychoSection = () => {
         <h3 className="section-title right">Psychodietetyka</h3>
         <CirclePhoto
           className="photo-left"
-          photoUrl={platePhoto}
+          photoUrl={forkPhoto}
           width="22vw"
           height="22vw"
           borderColor={COLORS.light_pink}
