@@ -4,74 +4,68 @@ import { OfferListContainer } from "../../styledComponents/offerStyled/offerSect
 import { OfferDescrContainer } from "../../styledComponents/offerStyled/offerActive.styled";
 
 const OfferSection = () => {
-  const [showDetails, setShowDetails] = useState(false);
-  const [offerDescrTitle, setOfferDescrTitle] = useState();
-  const [offerDescrParagraph1, setOfferDescrParagraph1] = useState();
-  const [offerDescrParagraph2, setOfferDescrParagraph2] = useState();
-  const [offerDescrParagraph3, setOfferDescrParagraph3] = useState();
-  const [offerDescrParagraph4, setOfferDescrParagraph4] = useState();
+  const [details, setDetails] = useState();
 
-  const toggleDetails = (
-    descrTitle,
-    descrPara1,
-    descrPara2,
-    descrPara3,
-    descrPara4
-  ) => {
-    setShowDetails(false);
-    changeDescrTitle(descrTitle);
-    setOfferDescrParagraph1(descrPara1);
-    setOfferDescrParagraph2(descrPara2);
-    setOfferDescrParagraph3(descrPara3);
-    setOfferDescrParagraph4(descrPara4);
-    setShowDetails(true);
+  
+
+  const action = (e) => {
+    switch (e.target.value) {
+      case '1':
+        setDetails({
+          title: "Na tym spotkaniu:",
+          firstP:
+            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          secondP: "I tak się to życie toczy. No.",
+          thirdP: "I tak się to życie toczy. No.",
+          fourthP: "I tak się to życie toczy. No.",
+          fifthP: "I tak się to życie toczy. No.",
+        })
+        break;
+      case '2':
+        setDetails({
+          title: "Na tym spotkaniu:",
+          firstP:
+            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          secondP: "124124czy. No.",
+          thirdP: "I41421",
+          fourthP: "123123",
+          fifthP: "123",
+        }); break;
+      case '3':
+        setDetails({
+          title: "Na tym spotkaniu:",
+          firstP:
+            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          secondP: "I tak się to życie toczy. No.",
+          thirdP: "I tak się to życie toczy. No.",
+          fourthP: "I tak się to życie toczy. No.",
+          fifthP: "I tak się to życie toczy. No.",
+        }); break;
+      case '4':
+        setDetails({
+          title: "Na tym spotkaniu:",
+          firstP:
+            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          secondP: "I tak się to życie toczy. No.",
+          thirdP: "I tak się to życie toczy. No.",
+          fourthP: "I tak się to życie toczy. No.",
+          fifthP: "I tak się to życie toczy. No.",
+        }); break;
+
+        default: {
+            setDetails({});
+            break;
+        } 
+    }
   };
 
-  const changeDescrTitle = (e) => {
-    setOfferDescrTitle(e);
+  const Offer = ({ offerName, value }) => {
+    return (
+      <>
+        <button className="single-offer" onClick={action} value={value}>{offerName}</button>
+      </>
+    );
   };
-
-  function Offer({
-    offerName,
-    descrTitle,
-    descrPara1,
-    descrPara2,
-    descrPara3,
-    descrPara4,
-  }) {
-    return (
-      <>
-        <div
-          onClick={() =>
-            toggleDetails(
-              descrTitle,
-              descrPara1,
-              descrPara2,
-              descrPara3,
-              descrPara4
-            )
-          }
-          className="single-offer"
-        >
-          <p className="offer-name">{offerName}</p>
-        </div>
-      </>
-    );
-  }
-
-  function OfferDescr() {
-    return (
-      <>
-        <div className="offer-descr">
-          <h4>{offerDescrTitle}</h4>
-          <p>{offerDescrParagraph1}</p>
-          <p>{offerDescrParagraph2}</p>
-          <p>{offerDescrParagraph3}</p>
-          <p>{offerDescrParagraph4}</p>
-        </div>
-      </>
-    );
-  }
 
   return (
     <>
@@ -79,24 +73,27 @@ const OfferSection = () => {
         <OfferListContainer>
           <h3 className="section-title">Oferta</h3>
           <Offer
+          
+            value={'1'}
             offerName="Konsultacja psychologiczna"
-            descrTitle="Na tym spotkaniu:"
-            descrPara1="In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo."
-            descrPara2="I tak się to życie toczy. No."
-            descrPara3="I tak się to życie toczy. No."
-            descrPara4="I tak się to życie toczy. No."
           />
-          <Offer
-            offerName="Jadłospis 7-dniowy"
-            descrTitle="Dla Ciebie:"
-            descrPara1="Sporządzimy jadłospis z przykładowymi posiłkami na 7 dni."
-            descrPara2="Dzięki niemu nie będzie problemu z brakiem pomysłu na posiłki."
-          />
+          <Offer offerName="Jadłospis 7-dniowy"
+          value={'2'} />
           <Offer offerName="Konsultacja psychodietetyczna" />
           <Offer offerName="Warsztaty o zdrowym odżywianiu" />
           <Offer offerName="Lekcja dla najmłodszych" />
         </OfferListContainer>
-        {showDetails && <OfferDescr />}
+        {details && (
+        <>
+        <div className="offer-descr">
+          <p className="descr-title">{details.title}</p>
+          <p className="descr-paragraph">{details.firstP}</p>
+          <p className="descr-paragraph">{details.secondP}</p>
+          <p className="descr-paragraph">{details.thirdP}</p>
+          <p className="descr-paragraph">{details.fourthP}</p>
+          <p className="descr-paragraph">{details.fifthP}</p>
+        </div>
+        </>)}
       </OfferDescrContainer>
     </>
   );

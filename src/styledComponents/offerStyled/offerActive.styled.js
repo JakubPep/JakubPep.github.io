@@ -5,7 +5,18 @@ export const OfferDescrContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   display: flex;
+
   .offer-descr {
+    animation: slideInOut 0.3s ease-in-out both;
+
+    @keyframes slideInOut  {
+      from {
+        right: -35vw;
+      }
+      to {
+        right: 0vw;
+      }
+    }
     position: relative;
     width: 35vw;
     padding-bottom: 50px;
@@ -14,13 +25,13 @@ export const OfferDescrContainer = styled.div`
     border-right: none;
     border-radius: 100px 0 0 100px;
     transition: disabled;
-    h4 {
+    .descr-title {
       font-size: 1.3rem;
       margin-left: 15%;
       text-align: start;
       color: ${COLORS.dark_pink};
     }
-    p {
+    .descr-paragraph {
       font-size: 1.1rem;
       line-height: 1.5rem;
       letter-spacing: 1px;
