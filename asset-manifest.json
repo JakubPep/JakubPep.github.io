@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.5b9ef30a.css",
-    "main.js": "/static/js/main.0b651e1c.js",
+    "main.js": "/static/js/main.58e06583.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
+    "static/media/fork-photo.png": "/static/media/fork-photo.ada67db85cdf3fcbef07.png",
     "static/media/pracownia-logo.png": "/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
     "static/media/plate-photo.png": "/static/media/plate-photo.a117fc2fc839381931e1.png",
     "static/media/brain-photo.png": "/static/media/brain-photo.99054bea2247dab53283.png",
@@ -12,10 +13,10 @@
     "static/media/logo-uniterra.svg": "/static/media/logo-uniterra.53d485f15aa4afa903929bed79e3f877.svg",
     "index.html": "/index.html",
     "main.5b9ef30a.css.map": "/static/css/main.5b9ef30a.css.map",
-    "main.0b651e1c.js.map": "/static/js/main.0b651e1c.js.map"
+    "main.58e06583.js.map": "/static/js/main.58e06583.js.map"
   },
   "entrypoints": [
     "static/css/main.5b9ef30a.css",
-    "static/js/main.0b651e1c.js"
+    "static/js/main.58e06583.js"
   ]
 }
