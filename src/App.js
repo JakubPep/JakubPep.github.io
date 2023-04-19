@@ -5,6 +5,7 @@ import About from "./components/About";
 import Education from "./components/education/Education";
 import PsychoSection from "./components/PsychoSection";
 import OfferSection from "./components/offer/OfferSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <SectionDivider />
       <OfferSection />
       <SectionDivider />
+      <Footer />
     </>
   );
 }

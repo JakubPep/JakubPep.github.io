@@ -7,7 +7,7 @@ export const OfferDescrContainer = styled.div`
   display: flex;
 
   .offer-descr {
-    animation: slideInOut 0.3s ease-in-out both;
+    animation: slideInOut 0.6s ease-out both;
 
     @keyframes slideInOut  {
       from {

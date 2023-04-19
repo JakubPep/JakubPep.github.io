@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../Vars";
 
-export const CirclePhoto = styled.div`
+export const CirclePhoto = styled.img`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   margin: 10px;
