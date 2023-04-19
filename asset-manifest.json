@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5b9ef30a.css",
-    "main.js": "/static/js/main.58e06583.js",
+    "main.js": "/static/js/main.ad3c2f2b.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
@@ -11,12 +11,17 @@
     "static/media/brain-photo.png": "/static/media/brain-photo.99054bea2247dab53283.png",
     "static/media/logo-uam.svg": "/static/media/logo-uam.bace46c77c1738074f9d497302545650.svg",
     "static/media/logo-uniterra.svg": "/static/media/logo-uniterra.53d485f15aa4afa903929bed79e3f877.svg",
+    "static/media/fa-ig-icon.svg": "/static/media/fa-ig-icon.116ad97e1f8e0638fcb7d5aed6800697.svg",
     "index.html": "/index.html",
+    "static/media/fa-phone-icon.svg": "/static/media/fa-phone-icon.b4a074baa24a40414433c87293d74020.svg",
+    "static/media/fa-mail-icon.svg": "/static/media/fa-mail-icon.6345f82ededa4dc800949734956dc764.svg",
+    "static/media/fa-fb-icon.svg": "/static/media/fa-fb-icon.3393a8700aa477db6175ff91ae54d6a2.svg",
+    "static/media/fa-place-icon.svg": "/static/media/fa-place-icon.2e0ef750ef3975644482ba424ba65ae0.svg",
     "main.5b9ef30a.css.map": "/static/css/main.5b9ef30a.css.map",
-    "main.58e06583.js.map": "/static/js/main.58e06583.js.map"
+    "main.ad3c2f2b.js.map": "/static/js/main.ad3c2f2b.js.map"
   },
   "entrypoints": [
     "static/css/main.5b9ef30a.css",
-    "static/js/main.58e06583.js"
+    "static/js/main.ad3c2f2b.js"
   ]
 }
