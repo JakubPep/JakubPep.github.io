@@ -7,6 +7,10 @@ export const AboutContainer = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 60px;
+  img{
+    min-width: 300px;
+    min-height: 300px;
+  }
 `;
 
 export const AboutDescription = styled.div`

@@ -8,6 +8,7 @@ import OfferSection from "./components/offer/OfferSection";
 import Footer from "./components/Footer";
 
 function App() {
+  
   return (
     <>
       <Hero height="100vh" />
@@ -23,5 +24,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

@@ -46,7 +46,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         {/* <h2 className="section-title">Zapraszam do kontaktu!</h2> */}
-        <CirclePhoto photoUrl={Logo} width="35vw" height="35vw" />
+        <CirclePhoto className="logo-photo" photoUrl={Logo} width="35vw" height="35vw" />
         <ContactDetails
           companyName="Pracownia psychologii i psychodietetyki"
           ownerName="Dominika Szałkowska"

@@ -23,6 +23,7 @@ const Courses = () => {
     <>
       <CoursesContainer>
         <CirclePhoto
+          className="float-left"
           height="25vw"
           width="25vw"
           photoUrl={coursesPhoto}
@@ -31,8 +32,6 @@ const Courses = () => {
         />
         <CourseRight>
           <Course courseName="Kurs zorganizowany przez ministerstwo kultury i rozwoju w temacie pomocy niepełnoletnim z ich zdrowiem psychicznym." />
-          <Course courseName="Szkolenie z pierwszej pomocy." />
-          <Course courseName="Szkolenie z pierwszej pomocy." />
           <Course courseName="Szkolenie z pierwszej pomocy." />
           <Course courseName="Szkolenie z pierwszej pomocy." />
         </CourseRight>

@@ -14,3 +14,23 @@ body {
   letter-spacing: 2px;
   color: #1E212B;
 }
+
+.float-left {
+  float: left;
+}
+
+@keyframes smoothAppear {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.anim-smooth-appear {
+  position: relative;
+  animation: smoothAppear 1s;
+}

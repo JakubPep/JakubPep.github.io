@@ -78,7 +78,7 @@ export const SchoolTitles = styled.div`
   }
 `;
 
-export const SchoolDescription = styled.p`
+export const SchoolDescription = styled.span`
   font-size: 20px;
   margin: 0;
   max-width: 350px;

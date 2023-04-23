@@ -5,12 +5,13 @@ import { OfferDescrContainer } from "../../styledComponents/offerStyled/offerAct
 
 const OfferSection = () => {
   const [details, setDetails] = useState();
+  const [showDetails, setShowDetails] = useState(false);
 
-  
-
-  const action = (e) => {
+  const action = async (e, ms) => {
+    setShowDetails(false);
+    await new Promise((r) => setTimeout(r, ms));
     switch (e.target.value) {
-      case '1':
+      case "1":
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -19,9 +20,10 @@ const OfferSection = () => {
           thirdP: "I tak się to życie toczy. No.",
           fourthP: "I tak się to życie toczy. No.",
           fifthP: "I tak się to życie toczy. No.",
-        })
+        });
+        setShowDetails(true);
         break;
-      case '2':
+      case "2":
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -30,8 +32,10 @@ const OfferSection = () => {
           thirdP: "I41421",
           fourthP: "123123",
           fifthP: "123",
-        }); break;
-      case '3':
+        });
+        setShowDetails(true);
+        break;
+      case "3":
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -40,8 +44,10 @@ const OfferSection = () => {
           thirdP: "I tak się to życie toczy. No.",
           fourthP: "I tak się to życie toczy. No.",
           fifthP: "I tak się to życie toczy. No.",
-        }); break;
-      case '4':
+        });
+        setShowDetails(true);
+        break;
+      case "4":
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -50,19 +56,36 @@ const OfferSection = () => {
           thirdP: "I tak się to życie toczy. No.",
           fourthP: "I tak się to życie toczy. No.",
           fifthP: "I tak się to życie toczy. No.",
-        }); break;
+        });
+        setShowDetails(true);
+        break;
+      case "5":
+        setDetails({
+          title: "Na tym spotkaniu:",
+          firstP:
+            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          secondP: "I tak się to życie toczy. No.",
+          thirdP: "I tak się to życie toczy. No.",
+          fourthP: "I tak się to życie toczy. No.",
+          fifthP: "I tak się to życie toczy. No.",
+        });
+        setShowDetails(true);
+        break;
 
-        default: {
-            setDetails({});
-            break;
-        } 
+      default: {
+        setDetails({});
+        setShowDetails(false);
+        break;
+      }
     }
   };
 
   const Offer = ({ offerName, value }) => {
     return (
       <>
-        <button className="single-offer" onClick={action} value={value}>{offerName}</button>
+        <button className="single-offer" onClick={action} value={value}>
+          {offerName}
+        </button>
       </>
     );
   };
@@ -72,28 +95,24 @@ const OfferSection = () => {
       <OfferDescrContainer>
         <OfferListContainer>
           <h3 className="section-title">Oferta</h3>
-          <Offer
-          
-            value={'1'}
-            offerName="Konsultacja psychologiczna"
-          />
-          <Offer offerName="Jadłospis 7-dniowy"
-          value={'2'} />
-          <Offer offerName="Konsultacja psychodietetyczna" />
-          <Offer offerName="Warsztaty o zdrowym odżywianiu" />
-          <Offer offerName="Lekcja dla najmłodszych" />
+          <Offer value={"1"} offerName="Konsultacja psychologiczna" />
+          <Offer value={"2"} offerName="Jadłospis 7-dniowy" />
+          <Offer value={"3"} offerName="Konsultacja psychodietetyczna" />
+          <Offer value={"4"} offerName="Warsztaty o zdrowym odżywianiu" />
+          <Offer value={"5"} offerName="Lekcja dla najmłodszych" />
         </OfferListContainer>
-        {details && (
-        <>
-        <div className="offer-descr">
-          <p className="descr-title">{details.title}</p>
-          <p className="descr-paragraph">{details.firstP}</p>
-          <p className="descr-paragraph">{details.secondP}</p>
-          <p className="descr-paragraph">{details.thirdP}</p>
-          <p className="descr-paragraph">{details.fourthP}</p>
-          <p className="descr-paragraph">{details.fifthP}</p>
-        </div>
-        </>)}
+        {showDetails && (
+          <>
+            <div className="offer-descr">
+              <p className="descr-title">{details.title}</p>
+              <p className="descr-paragraph">{details.firstP}</p>
+              <p className="descr-paragraph">{details.secondP}</p>
+              <p className="descr-paragraph">{details.thirdP}</p>
+              <p className="descr-paragraph">{details.fourthP}</p>
+              <p className="descr-paragraph">{details.fifthP}</p>
+            </div>
+          </>
+        )}
       </OfferDescrContainer>
     </>
   );

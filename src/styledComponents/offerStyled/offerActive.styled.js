@@ -10,11 +10,13 @@ export const OfferDescrContainer = styled.div`
     animation: slideInOut 0.6s ease-out both;
 
     @keyframes slideInOut  {
-      from {
+      0% {
         right: -35vw;
+        opacity: 0
       }
-      to {
+      100% {
         right: 0vw;
+        opacity: 1;
       }
     }
     position: relative;

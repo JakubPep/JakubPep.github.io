@@ -14,6 +14,10 @@ export const FooterContainer = styled.div`
     box-shadow: none;
     border: none;
   }
+  img.logo-photo {
+    min-width: 350px;
+    min-height: 350px;
+  }
 `;
 
 export const ContactContainer = styled.div`
@@ -63,7 +67,7 @@ export const Socials = styled.div`
   width: 50%;
   gap: 20px;
   margin-top: 40px;
-  img{
+  img {
     width: 40px;
     height: 40px;
   }

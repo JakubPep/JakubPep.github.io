@@ -12,7 +12,7 @@ const Education = () => {
   return (
     <>
       <EducationContainer>
-        <h3 className="section-title">Edukacja</h3>
+        <h3 className="section-title">Wykształcenie</h3>
         <SchoolContainer>
           <SchoolElement
             logoUrl={uam}
