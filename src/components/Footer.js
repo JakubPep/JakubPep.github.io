@@ -25,7 +25,7 @@ const Footer = () => {
   }) => {
     return (
       <>
-        <ContactContainer>
+        <ContactContainer className="anim-smooth-appear">
           <p className="company-name">{companyName}</p>
           <p className="owner-name">{ownerName}</p>
           <hr className="details-divider" />
@@ -46,7 +46,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         {/* <h2 className="section-title">Zapraszam do kontaktu!</h2> */}
-        <CirclePhoto className="logo-photo" photoUrl={Logo} width="35vw" height="35vw" />
+        <CirclePhoto className="logo-photo anim-smooth-appear" photoUrl={Logo} width="35vw" height="35vw" />
         <ContactDetails
           companyName="Pracownia psychologii i psychodietetyki"
           ownerName="Dominika Szałkowska"

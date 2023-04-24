@@ -17,7 +17,7 @@ filter: blur(2px);
 
 export const HeroLogo = styled.div`
 position: absolute;
-top: 5%;
+top: 15px;
 left: 50%;
 background-color: ${COLORS.light_green_opacity};
 border-radius: 50%;
@@ -25,6 +25,7 @@ img{
     height: 45vw;
     width: auto;
     border-radius: 50%;
+    max-height: 90vh;
 
     
 }

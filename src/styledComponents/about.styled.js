@@ -9,7 +9,9 @@ export const AboutContainer = styled.div`
   margin-bottom: 60px;
   img{
     min-width: 300px;
+    max-width: 450px;
     min-height: 300px;
+    max-height: 450px;
   }
 `;
 

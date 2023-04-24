@@ -12,7 +12,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 2px;
-  color: #1E212B;
+  color: #1e212b;
 }
 
 .float-left {
@@ -32,5 +32,5 @@ body {
 
 .anim-smooth-appear {
   position: relative;
-  animation: smoothAppear 1s;
+  animation: smoothAppear 2s;
 }

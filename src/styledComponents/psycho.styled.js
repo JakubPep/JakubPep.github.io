@@ -11,7 +11,9 @@ export const PsychoElement = styled.div`
 
   img{
     min-width: 200px;
+    max-width: 400px;
     min-height: 200px;
+    max-height: 400px;
   }
 
   .section-title {
@@ -19,6 +21,7 @@ export const PsychoElement = styled.div`
   }
   .section-title.right {
     text-align: end;
+    margin-top: 100px;
   }
   .photo-right {
     float: right;
@@ -26,7 +29,7 @@ export const PsychoElement = styled.div`
   }
   .photo-left {
     float: left;
-    margin: 0 40px 20px 0;
+    margin: 0 40px 0px 0;
   }
   p {
     font-size: 1.25rem;

@@ -9,7 +9,9 @@ export const CoursesContainer = styled.div`
   img{
     margin-right: 40px;
     min-width: 300px;
+    max-width: 400px;
     min-height: 300px;
+    max-height: 400px;
   }
 `;
 

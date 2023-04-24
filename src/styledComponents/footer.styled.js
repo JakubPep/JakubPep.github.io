@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
   img {
     box-shadow: none;
     border: none;
+    background-repeat: no-repeat;
   }
   img.logo-photo {
     min-width: 350px;
@@ -25,6 +26,8 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  animation-delay: .7s;
 
   .company-name {
     max-width: 500px;

@@ -6,24 +6,28 @@ import { OfferDescrContainer } from "../../styledComponents/offerStyled/offerAct
 const OfferSection = () => {
   const [details, setDetails] = useState();
   const [showDetails, setShowDetails] = useState(false);
+  const [activeOffer, setActiveOffer] = useState("");
 
   const action = async (e, ms) => {
     setShowDetails(false);
+    
     await new Promise((r) => setTimeout(r, ms));
     switch (e.target.value) {
       case "1":
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
+          "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
           secondP: "I tak się to życie toczy. No.",
           thirdP: "I tak się to życie toczy. No.",
           fourthP: "I tak się to życie toczy. No.",
           fifthP: "I tak się to życie toczy. No.",
         });
         setShowDetails(true);
+        setActiveOffer("1");
         break;
       case "2":
+        setActiveOffer("2");
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -36,6 +40,7 @@ const OfferSection = () => {
         setShowDetails(true);
         break;
       case "3":
+        setActiveOffer("3");
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -48,6 +53,7 @@ const OfferSection = () => {
         setShowDetails(true);
         break;
       case "4":
+        setActiveOffer("4");
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -60,6 +66,7 @@ const OfferSection = () => {
         setShowDetails(true);
         break;
       case "5":
+        setActiveOffer("5");
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
@@ -73,6 +80,7 @@ const OfferSection = () => {
         break;
 
       default: {
+        setActiveOffer("");
         setDetails({});
         setShowDetails(false);
         break;
@@ -83,7 +91,7 @@ const OfferSection = () => {
   const Offer = ({ offerName, value }) => {
     return (
       <>
-        <button className="single-offer" onClick={action} value={value}>
+        <button className={`single-offer ${activeOffer === value ? " single-offer--active" : ""}`} onClick={action} value={value}>
           {offerName}
         </button>
       </>

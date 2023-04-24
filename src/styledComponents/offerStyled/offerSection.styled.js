@@ -33,10 +33,18 @@ export const OfferListContainer = styled.div`
 
     :hover {
       left: 17%;
+     
     }
     :active {
       background-color: ${COLORS.dark_pink};
       color: #fff;
     }
+  }
+
+  .single-offer.single-offer--active {
+    background-color: ${COLORS.dark_pink};
+    color: #fff;
+    left: 17%;
+    
   }
 `;

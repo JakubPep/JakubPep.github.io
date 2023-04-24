@@ -3,7 +3,6 @@ import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
 import { PsychoElement } from "../styledComponents/psycho.styled";
 import { COLORS } from "../Vars";
 import brainPhoto from "../images/brain-photo.png"
-import platePhoto from "../images/plate-photo.png"
 import forkPhoto from "../images/fork-photo.png"
 
 const PsychoSection = () => {
