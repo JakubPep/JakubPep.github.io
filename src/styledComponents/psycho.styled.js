@@ -9,7 +9,7 @@ export const PsychoElement = styled.div`
   margin-right: auto;
   justify-content: center;
 
-  img{
+  img {
     min-width: 200px;
     max-width: 400px;
     min-height: 200px;
@@ -35,5 +35,19 @@ export const PsychoElement = styled.div`
     font-size: 1.25rem;
     line-height: 1.6rem;
     color: ${COLORS.font_black};
+  }
+
+  @media (max-width: 450px) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    .photo-right,
+    .photo-left {
+      float: none;
+      margin: 0 auto;
+    }
+    .section-title.right {
+      margin-top: 50px;
+    }
   }
 `;
