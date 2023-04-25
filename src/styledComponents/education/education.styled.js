@@ -17,6 +17,10 @@ export const EducationContainer = styled.div`
     margin-bottom: 30px;
     text-align: center;
   }
+
+  @media (max-width: 450px) {
+    padding: 50px 0;
+  }
 `;
 
 export const SchoolContainer = styled.div`

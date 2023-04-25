@@ -6,4 +6,8 @@ export const DividerLine = styled.hr`
   border: 1px solid ${COLORS.light_pink};
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @media (max-width: 450px){
+    width: 90%;
+  }
 `;

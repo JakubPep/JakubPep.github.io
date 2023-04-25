@@ -13,6 +13,13 @@ export const AboutContainer = styled.div`
     min-height: 300px;
     max-height: 450px;
   }
+
+  @media (max-width: 450px){
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const AboutDescription = styled.div`
@@ -28,5 +35,9 @@ export const AboutDescription = styled.div`
     line-height: 24px;
     color: ${COLORS.font_black};
     margin: 0;
+  }
+
+  @media (max-width: 450px){
+    align-items: center;
   }
 `;
