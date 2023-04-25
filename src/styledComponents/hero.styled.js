@@ -17,9 +17,9 @@ export const HeroImage = styled.div`
   background-image: url(${bgImage});
   background-size: cover;
   background-position: center;
-  /* filter: blur(2px); */
   @media (max-width: 450px) {
-    background-position-x: 10%;
+    justify-content: center;
+    background-position-x: 20%;
   }
 `;
 
@@ -38,10 +38,11 @@ export const HeroLogo = styled.div`
   }
 
   @media (max-width: 450px) {
-    position: relative;
+    justify-content: center;
+    /* position: relative;
     top: 20px;
     right: 20px;
-    height: 60%;
+    height: 60%; */
     img {
     }
   }

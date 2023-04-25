@@ -46,6 +46,9 @@ export const PsychoElement = styled.div`
       float: none;
       margin: 0 auto;
     }
+    .section-title, .section-title.right{
+      text-align: center;
+    }
     .section-title.right {
       margin-top: 50px;
     }

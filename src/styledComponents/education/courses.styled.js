@@ -50,7 +50,10 @@ export const SingleCourse = styled.div`
     font-size: 1.1rem;
     line-height: 1.4rem;
     text-align: center;
-    @media (max-width: 450px) {
+  }
+  @media (max-width: 450px) {
+    border-radius: 0;
+    p {
       font-size: 1rem;
     }
   }

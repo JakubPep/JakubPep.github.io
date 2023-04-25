@@ -19,6 +19,9 @@ export const AboutContainer = styled.div`
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    img {
+      border-width: 2px;
+    }
   }
 `;
 

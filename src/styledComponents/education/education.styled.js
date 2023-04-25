@@ -46,6 +46,9 @@ export const SchoolElements = styled.div`
   background-color: ${COLORS.white_opacity};
   border: 1px solid ${COLORS.font_black};
   border-radius: 5px;
+  @media (max-width: 450px) {
+    border-radius: 0;
+  }
 `;
 
 export const SchoolTitleContainer = styled.div`
