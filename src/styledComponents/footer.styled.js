@@ -9,6 +9,9 @@ export const FooterBg = styled.div`
   padding-top: 30px;
   .section-title {
     text-align: center;
+    @media (max-width: 450px) {
+    margin-bottom: 30px;
+  }
   }
 `;
 
@@ -27,6 +30,12 @@ export const FooterContainer = styled.div`
     min-width: 350px;
     min-height: 350px;
   }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
 `;
 
 export const ContactContainer = styled.div`
@@ -34,7 +43,9 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
+  @media (max-width: 450px) {
+    margin-bottom: 30px;
+  }
   .company-name {
     max-width: 500px;
 
@@ -43,6 +54,7 @@ export const ContactContainer = styled.div`
     font-weight: 700;
     line-height: 2.2rem;
     margin: 0;
+    
   }
   .owner-name {
     font-family: "Times New Roman", Times, serif;
@@ -56,6 +68,9 @@ export const ContactContainer = styled.div`
     border: none;
     margin: 0 0 15px 0;
     border-top: 3px solid ${COLORS.font_black};
+    @media (max-width: 450px) {
+    width: 70%;
+  }
   }
 
   .contact-detail {
@@ -79,5 +94,9 @@ export const Socials = styled.div`
   img {
     width: 40px;
     height: 40px;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+    justify-content: center;
   }
 `;

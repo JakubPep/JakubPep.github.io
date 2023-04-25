@@ -5,7 +5,7 @@ import bgImage from "../images/heroPhoto.jpg";
 export const HeroContainer = styled.div`
   height: ${(props) => props.height};
   @media (max-width: 450px) {
-    height: 45vh;
+    height: 55vh;
   }
 `;
 
@@ -19,7 +19,7 @@ export const HeroImage = styled.div`
   background-position: center;
   /* filter: blur(2px); */
   @media (max-width: 450px) {
-    justify-content: center;
+    background-position-x: 10%;
   }
 `;
 
@@ -38,7 +38,10 @@ export const HeroLogo = styled.div`
   }
 
   @media (max-width: 450px) {
-    justify-content: center;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    height: 60%;
     img {
     }
   }
