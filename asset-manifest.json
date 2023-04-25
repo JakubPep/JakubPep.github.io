@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b9ef30a.css",
-    "main.js": "/static/js/main.4e027fbc.js",
+    "main.css": "/static/css/main.c5354b8a.css",
+    "main.js": "/static/js/main.a2044593.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
-    "static/media/fork-photo.png": "/static/media/fork-photo.ada67db85cdf3fcbef07.png",
+    "static/media/fork-photo.png": "/static/media/fork-photo.91fc8968a5ac99367530.png",
     "static/media/pracownia-logo.png": "/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
-    "static/media/plate-photo.png": "/static/media/plate-photo.a117fc2fc839381931e1.png",
     "static/media/brain-photo.png": "/static/media/brain-photo.99054bea2247dab53283.png",
     "static/media/logo-uam.svg": "/static/media/logo-uam.bace46c77c1738074f9d497302545650.svg",
     "static/media/logo-uniterra.svg": "/static/media/logo-uniterra.53d485f15aa4afa903929bed79e3f877.svg",
@@ -17,11 +16,11 @@
     "static/media/fa-mail-icon.svg": "/static/media/fa-mail-icon.6345f82ededa4dc800949734956dc764.svg",
     "static/media/fa-fb-icon.svg": "/static/media/fa-fb-icon.e4d1358060c01a3e706738bb8983b000.svg",
     "static/media/fa-place-icon.svg": "/static/media/fa-place-icon.2e0ef750ef3975644482ba424ba65ae0.svg",
-    "main.5b9ef30a.css.map": "/static/css/main.5b9ef30a.css.map",
-    "main.4e027fbc.js.map": "/static/js/main.4e027fbc.js.map"
+    "main.c5354b8a.css.map": "/static/css/main.c5354b8a.css.map",
+    "main.a2044593.js.map": "/static/js/main.a2044593.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b9ef30a.css",
-    "static/js/main.4e027fbc.js"
+    "static/css/main.c5354b8a.css",
+    "static/js/main.a2044593.js"
   ]
 }
