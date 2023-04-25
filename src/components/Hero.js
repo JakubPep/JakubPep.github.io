@@ -18,8 +18,10 @@ const Hero = (props) => {
     <>
     <HeroContainer
     height={props.height}>
-      <HeroImage ></HeroImage>
+      <HeroImage >
       <LogoImage></LogoImage>
+      </HeroImage>
+      
       
       
       
