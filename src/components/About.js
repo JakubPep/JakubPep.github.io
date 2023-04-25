@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import {
   AboutContainer,
   AboutDescription,
@@ -8,25 +7,7 @@ import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
 import aboutPhoto from "../images/aboutPhoto.jpg";
 import { COLORS } from "../Vars";
 
-
-
-
 const About = () => {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      // If the element is visible
-      if (entry.isIntersecting) {
-        // Add the animation class
-        entry.target.classList.add('anim-smooth-appear');
-        return;
-      }
-      entry.target.classList.remove('anim-smooth-appear');
-    });
-  });
-  useEffect(() => {
-    observer.observe(document.querySelector('.about-section'));
-  });
-
   return (
     <>
       <AboutContainer className="about-section">
@@ -58,11 +39,10 @@ const About = () => {
           height="30vw"
           width="30vw"
           photoUrl={aboutPhoto}
-          borderWidth='7px'
+          borderWidth="7px"
           borderColor={COLORS.light_pink}
         />
       </AboutContainer>
-      
     </>
   );
 };

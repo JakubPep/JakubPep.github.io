@@ -1,15 +1,23 @@
 import styled from "styled-components";
 import { COLORS } from "../Vars";
 
-export const FooterContainer = styled.div`
-  display: flex;
-  gap: 25px;
+export const FooterBg = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: ${COLORS.light_green};
   padding-top: 30px;
-  padding-bottom: 30px;
+  .section-title {
+    text-align: center;
+  }
+`;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+
   img {
     box-shadow: none;
     border: none;
@@ -26,8 +34,6 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  animation-delay: .7s;
 
   .company-name {
     max-width: 500px;

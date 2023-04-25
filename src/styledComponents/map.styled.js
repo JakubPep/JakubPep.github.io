@@ -1,0 +1,13 @@
+import styled from "styled-components";
+import { COLORS } from "../Vars";
+
+export const Map = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .map-embeed {
+    height: 400px;
+    width: 60%;
+    border: 4px solid ${COLORS.light_pink};
+  }
+`;

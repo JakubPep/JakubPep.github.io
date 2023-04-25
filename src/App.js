@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./components/Hero";
 import SectionDivider from "./components/SectionDivider";
 import About from "./components/About";
@@ -8,7 +8,23 @@ import OfferSection from "./components/offer/OfferSection";
 import Footer from "./components/Footer";
 
 function App() {
-  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add("anim-smooth-appear");
+        return;
+      }
+      entry.target.classList.remove("anim-smooth-appear");
+    });
+  });
+  useEffect(() => {
+    observer.observe(document.querySelector(".about-section"));
+    observer.observe(document.querySelector(".contact-section"));
+    observer.observe(document.querySelector(".contact-logo"));
+  });
+
   return (
     <>
       <Hero height="100vh" />
@@ -24,6 +40,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;
