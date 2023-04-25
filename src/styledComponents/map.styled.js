@@ -3,6 +3,7 @@ import { COLORS } from "../Vars";
 
 export const Map = styled.div`
   width: 100%;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   .map-embeed {
