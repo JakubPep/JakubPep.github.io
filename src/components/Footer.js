@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
 import {
   FooterContainer,
@@ -14,7 +14,10 @@ import igIcon from "../images/svg/fa-ig-icon.svg";
 import fbIcon from "../images/svg/fa-fb-icon.svg";
 import MapElement from "./Map";
 
+import Popup from "./reservations/popup";
+
 const Footer = () => {
+  const [trigger, setTrigger] = useState(false);
   const ContactDetails = ({
     companyName,
     ownerName,
@@ -49,7 +52,7 @@ const Footer = () => {
       </>
     );
   };
-
+    const showHideReservationsPopup = () => setTrigger(!trigger);
   return (
     <>
       <FooterBg className="contact-section">
@@ -70,7 +73,9 @@ const Footer = () => {
           />
         </FooterContainer>
         <MapElement />
+        <button onClick={showHideReservationsPopup} >rezerwuj</button>
       </FooterBg>
+      {trigger ? <Popup setTrigger={showHideReservationsPopup} /> : null}
     </>
   );
 };
