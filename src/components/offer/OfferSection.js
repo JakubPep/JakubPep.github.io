@@ -30,12 +30,9 @@ const OfferSection = () => {
         setActiveOffer("2");
         setDetails({
           title: "Na tym spotkaniu:",
-          firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
-          secondP: "124124czy. No.",
-          thirdP: "I41421",
-          fourthP: "123123",
-          fifthP: "123",
+          secondP: "Jednorazowe spotkanie stacjonarne lub online.",
+          fourthP: "Czas trwania: 50 minut",
+          fifthP: "Koszt: 140 zł",
         });
         setShowDetails(true);
         break;

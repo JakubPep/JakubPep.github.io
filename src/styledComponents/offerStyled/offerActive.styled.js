@@ -34,7 +34,7 @@ export const OfferDescrContainer = styled.div`
       color: ${COLORS.dark_pink};
     }
     .descr-paragraph {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       line-height: 1.5rem;
       letter-spacing: 1px;
       margin-left: 10%;

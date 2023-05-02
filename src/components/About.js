@@ -14,25 +14,23 @@ const About = () => {
         <AboutDescription>
           <h3 className="section-title">O mnie</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            sagittis pharetra dolor lobortis viverra. Aliquam lobortis mauris
-            iaculis molestie sagittis. Proin consectetur est eu nisi pretium
-            cursus. Cras tellus libero, malesuada quis elit eget, scelerisque
-            fringilla ligula. Morbi accumsan in.
+            Nazywam się Dominika Szałkowska. Jestem psycholożką i
+            psychodietetyczką.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            sagittis pharetra dolor lobortis viverra. Aliquam lobortis mauris
-            iaculis molestie sagittis. Proin consectetur est eu nisi pretium
-            cursus. Cras tellus libero, malesuada quis elit eget, scelerisque
-            fringilla ligula. Morbi accumsan in.
+            Pomagam moim klientom i klientkom odzyskać spokój i radość z
+            jedzenia, wyzwolić się od zasad restrykcyjnych diet, odbudować
+            pozytywną relację z jedzeniem i swoim ciałem oraz wyjść z zaburzeń
+            odżywiania.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            sagittis pharetra dolor lobortis viverra. Aliquam lobortis mauris
-            iaculis molestie sagittis. Proin consectetur est eu nisi pretium
-            cursus. Cras tellus libero, malesuada quis elit eget, scelerisque
-            fringilla ligula. Morbi accumsan in.
+            Konsultacje, które prowadzę to spotkania w partnerskiej atmosferze,
+            skupiające się na przepracowaniu doświadczanych trudności.
+          </p>
+          <p>
+            W swojej pracy opieram się na metodach podejścia
+            poznawczo-behawioralnego, humanistyczno-egzystencjalnego oraz
+            Porozumienia Bez Przemocy (NVC).
           </p>
         </AboutDescription>
         <CirclePhoto

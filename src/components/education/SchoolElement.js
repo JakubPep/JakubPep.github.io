@@ -16,7 +16,10 @@ const SchoolElement = (props) => {
           <SchoolTitle univName={props.univName} univYears={props.univYears} />
         </SchoolTitleContainer>
         <SchoolDescription>
-          <p>{props.descr}</p>
+          <p>{props.descr1}</p>
+          <p>{props.descr2}</p>
+          <p>{props.descr3}</p>
+          <p>{props.descr4}</p>
         </SchoolDescription>
       </SchoolElements>
     </>

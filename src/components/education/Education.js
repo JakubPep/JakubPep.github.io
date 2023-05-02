@@ -18,13 +18,19 @@ const Education = () => {
             logoUrl={uam}
             univName="Uniwersytet im. Adama Mickiewicza w Poznaniu"
             univYears="2017-2022"
-            descr="Psychologia. 5-letnie studia magisterskie. Specjalizacje: psychologia kliniczna, psychologia edukacji."
+            descr1="Pięcioletnie studia magisterskie"
+            descr2="Wydział Psychologii i Kognitywistyki"
+            descr3="Psychologia"
+            descr4="Specjalności: Psychologia Edukacji, Psychologia Kliniczna"
           />
           <SchoolElement
             logoUrl={uniTerra}
             univName="Wyższa Szkoła Uni-Terra w Poznaniu"
             univYears="2020-2023"
-            descr="Dietetyka. 3-letnie studia licencjackie. Specjalizacja: dietetyka kliniczna."
+            descr1="Trzyletnie studia licencjackie"
+            descr2="Wydział Nauk Społecznych i Nauk o Zdrowiu"
+            descr3="Dietetyka"
+            descr4="Specjalność: Dietetyka Kliniczna"
           />
         </SchoolContainer>
         <Courses />

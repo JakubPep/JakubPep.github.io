@@ -26,6 +26,7 @@ export const EducationContainer = styled.div`
 export const SchoolContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 0;
   width: 90%;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -36,10 +37,12 @@ export const SchoolContainer = styled.div`
 
 export const SchoolElements = styled.div`
   display: flex;
+  flex: 1 1 0;
   flex-direction: column;
   align-items: center;
   min-height: 200px;
   min-width: 300px;
+  max-width: 90%;
 
   padding: 20px;
 
@@ -52,10 +55,6 @@ export const SchoolElements = styled.div`
 `;
 
 export const SchoolTitleContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
   margin-bottom: 15px;
 `;
 
@@ -66,11 +65,11 @@ export const SchoolLogo = styled.div`
   background-position: center;
   width: 60px;
   height: 60px;
+  margin: 10px auto;
 `;
 
 export const SchoolTitles = styled.div`
   text-align: center;
-  max-width: 300px;
 
   .school-name {
     font-size: 22px;
@@ -79,15 +78,20 @@ export const SchoolTitles = styled.div`
     margin: 0px;
   }
   .school-years {
-    font-size: 12px;
+    font-size: 0.9rem;
     color: ${COLORS.font_black};
     margin: 0;
   }
 `;
 
 export const SchoolDescription = styled.span`
-  font-size: 20px;
   margin: 0;
   max-width: 350px;
   text-align: center;
+  white-space: break-spaces;
+  p{
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+  }
 `;
