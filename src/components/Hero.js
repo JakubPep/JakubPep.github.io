@@ -1,31 +1,28 @@
 import React from "react";
-import { HeroContainer, HeroImage, HeroLogo } from "../styledComponents/hero.styled.js";
-import logoImage from "../images/pracownia-logo.png"
+import {
+  HeroContainer,
+  HeroImage,
+  HeroLogo,
+} from "../styledComponents/hero.styled.js";
+import logoImage from "../images/pracownia-logo.png";
 
 const Hero = (props) => {
-
   const LogoImage = () => {
-    return(
+    return (
       <>
-      <HeroLogo>
-      <img src={logoImage} alt="pracownia-logo"></img>
-      </HeroLogo>
+        <HeroLogo>
+          <img src={logoImage} alt="pracownia-logo"></img>
+        </HeroLogo>
       </>
-    )
-  }
+    );
+  };
 
   return (
     <>
-    <HeroContainer
-    height={props.height}>
-      <HeroImage >
-      <LogoImage></LogoImage>
-      </HeroImage>
-      
-      
-      
-      
-      
+      <HeroContainer id="hero" height={props.height}>
+        <HeroImage>
+          <LogoImage></LogoImage>
+        </HeroImage>
       </HeroContainer>
     </>
   );

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useMediaQuery } from 'react-responsive';
 import Hero from "./components/Hero";
 import SectionDivider from "./components/SectionDivider";
 import About from "./components/About";
@@ -26,6 +25,10 @@ function App() {
     observer.observe(document.querySelector(".contact-section"));
     observer.observe(document.querySelector(".contact-logo"));
   });
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+
+  })
 
 
 
