@@ -97,7 +97,7 @@ const OfferSection = () => {
 
   return (
     <>
-      <OfferDescrContainer>
+      <OfferDescrContainer id="offer">
         <OfferListContainer>
           <h3 className="section-title">Oferta</h3>
           <Offer value={"1"} offerName="Konsultacja psychologiczna" />

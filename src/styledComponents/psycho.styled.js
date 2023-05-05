@@ -7,6 +7,7 @@ export const PsychoElement = styled.div`
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
+  padding-top: 60px;
 
   margin-left: auto;
   margin-right: auto;

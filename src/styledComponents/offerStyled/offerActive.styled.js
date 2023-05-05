@@ -5,6 +5,7 @@ export const OfferDescrContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   display: flex;
+  padding-top: 60px;
 
   .offer-descr {
     animation: slideInOut 0.5s ease-out both;

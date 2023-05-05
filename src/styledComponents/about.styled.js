@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 60px;
+  padding-top: 60px;
   img{
     min-width: 300px;
     max-width: 450px;

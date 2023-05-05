@@ -10,7 +10,7 @@ import { COLORS } from "../Vars";
 const About = () => {
   return (
     <>
-      <AboutContainer className="about-section">
+      <AboutContainer className="about-section" id="about">
         <AboutDescription>
           <h3 className="section-title">O mnie</h3>
           <p>

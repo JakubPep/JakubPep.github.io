@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useMediaQuery } from 'react-responsive';
 import Hero from "./components/Hero";
 import SectionDivider from "./components/SectionDivider";
 import About from "./components/About";
@@ -6,6 +7,7 @@ import Education from "./components/education/Education";
 import PsychoSection from "./components/PsychoSection";
 import OfferSection from "./components/offer/OfferSection";
 import Footer from "./components/Footer";
+import MenuDesktop from "./components/menu/MenuDesktop";
 
 function App() {
   const observer = new IntersectionObserver((entries) => {
@@ -25,8 +27,11 @@ function App() {
     observer.observe(document.querySelector(".contact-logo"));
   });
 
+
+
   return (
     <>
+      <MenuDesktop />
       <Hero height="100vh" />
       <SectionDivider />
       <About />

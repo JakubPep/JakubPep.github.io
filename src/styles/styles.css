@@ -4,6 +4,8 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 60px;
 }
 
 .section-title {

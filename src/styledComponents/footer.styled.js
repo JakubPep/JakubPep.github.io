@@ -6,7 +6,7 @@ export const FooterBg = styled.div`
   align-items: center;
   width: 100%;
   background-color: ${COLORS.light_green};
-  padding-top: 30px;
+  padding-top: 60px;
   .section-title {
     text-align: center;
     @media (max-width: 450px) {
