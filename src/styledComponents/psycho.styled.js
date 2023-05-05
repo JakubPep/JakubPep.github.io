@@ -4,6 +4,9 @@ import { COLORS } from "../Vars";
 export const PsychoElement = styled.div`
   width: 80%;
   margin-bottom: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
 
   margin-left: auto;
   margin-right: auto;
@@ -18,6 +21,7 @@ export const PsychoElement = styled.div`
 
   .section-title {
     margin-bottom: 30px;
+    width: 100%;
   }
   .section-title.right {
     text-align: end;
@@ -31,10 +35,14 @@ export const PsychoElement = styled.div`
     float: left;
     margin: 0 40px 0px 0;
   }
-  p {
+  p, li {
     font-size: 1.25rem;
     line-height: 1.6rem;
     color: ${COLORS.font_black};
+  }
+
+  li {
+    margin-bottom: 10px;
   }
 
   @media (max-width: 450px) {
