@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.598817d9.css",
-    "main.js": "/static/js/main.e975d1a7.js",
+    "main.css": "/static/css/main.d0aeb8cd.css",
+    "main.js": "/static/js/main.b4d1bbc4.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
@@ -12,15 +12,17 @@
     "static/media/logo-uniterra.svg": "/static/media/logo-uniterra.53d485f15aa4afa903929bed79e3f877.svg",
     "static/media/fa-ig-icon.svg": "/static/media/fa-ig-icon.f80af99fe3d8574e35a62b3da28c1d21.svg",
     "index.html": "/index.html",
+    "static/media/fa-bars-icon.svg": "/static/media/fa-bars-icon.dd92aed316c5967acbf1f7094cd87de4.svg",
+    "static/media/fa-xmark-icon.svg": "/static/media/fa-xmark-icon.6af010327c10a01672900f26b9d06c67.svg",
     "static/media/fa-phone-icon.svg": "/static/media/fa-phone-icon.b4a074baa24a40414433c87293d74020.svg",
     "static/media/fa-mail-icon.svg": "/static/media/fa-mail-icon.6345f82ededa4dc800949734956dc764.svg",
     "static/media/fa-fb-icon.svg": "/static/media/fa-fb-icon.e4d1358060c01a3e706738bb8983b000.svg",
     "static/media/fa-place-icon.svg": "/static/media/fa-place-icon.2e0ef750ef3975644482ba424ba65ae0.svg",
-    "main.598817d9.css.map": "/static/css/main.598817d9.css.map",
-    "main.e975d1a7.js.map": "/static/js/main.e975d1a7.js.map"
+    "main.d0aeb8cd.css.map": "/static/css/main.d0aeb8cd.css.map",
+    "main.b4d1bbc4.js.map": "/static/js/main.b4d1bbc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.598817d9.css",
-    "static/js/main.e975d1a7.js"
+    "static/css/main.d0aeb8cd.css",
+    "static/js/main.b4d1bbc4.js"
   ]
 }
