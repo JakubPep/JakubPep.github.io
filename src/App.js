@@ -7,8 +7,10 @@ import PsychoSection from "./components/PsychoSection";
 import OfferSection from "./components/offer/OfferSection";
 import Footer from "./components/Footer";
 import MenuDesktop from "./components/menu/MenuDesktop";
+import { useWindowWidth } from "./hooks/useWindowWidth";
 
 function App() {
+  console.log(useWindowWidth());
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       // If the element is visible
