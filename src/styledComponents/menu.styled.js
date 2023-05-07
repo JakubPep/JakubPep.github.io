@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../Vars";
 
-export const MenuBar = styled.nav`
+export const MenuBar = styled.div`
   height: 60px;
   width: 100%;
   position: fixed;
@@ -52,6 +52,20 @@ export const MenuBar = styled.nav`
       }
     }
   }
+  @media (max-width: 450px){
+    display: flex;
+    justify-content: center;
+    ul{
+      flex-direction: column;
+      /* align-items: flex-start; */
+      justify-content: flex-start;
+      height: auto;
+      padding: 0;
+      li{
+        margin: 0 0 5px 0;
+      }
+    }
+  }
 `;
 
 export const MenuBarLogo = styled.div`
@@ -69,3 +83,5 @@ export const MenuBarLogo = styled.div`
   z-index: 101;
   animation: smoothAppear 1s;
 `;
+
+

@@ -8,8 +8,7 @@ const MenuDesktop = () => {
   const showLogo = useLogoInMenu(false);
 
   function ScrollToTop() {
-    const topSection = document.getElementById("hero");
-      topSection.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   return (
