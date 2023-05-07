@@ -34,7 +34,6 @@ const Menu = () => {
         <MenuLink text="O mnie" sectionId="about" />
         <MenuLink text="Jak pracuję?" sectionId="psycho-work" />
         <MenuLink text="Oferta" sectionId="offer" />
-        <MenuLink text="Przestrzeń" sectionId="" />
         <MenuLink text="Kontakt" sectionId="contact" />
       </ul>
     </>
