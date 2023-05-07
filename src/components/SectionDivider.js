@@ -1,10 +1,12 @@
 import React from "react";
 import { DividerLine } from "../styledComponents/divider.styled";
 
-const SectionDivider = () => {
+const SectionDivider = (props) => {
     return (
     <>
-        <DividerLine />
+        <DividerLine 
+        id={props.id}
+        />
     </>
     );
 };

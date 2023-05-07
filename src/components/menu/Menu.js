@@ -1,22 +1,17 @@
 import React from "react";
 import useActiveSection from "../../hooks/useActiveSection";
 
-  const Menu = () => {
-    /* Define which section ID's are observed by useActiveSection observer */
-    const sectionIds = ["hero", "about", "psycho-work", "offer", "contact"];
-    const activeSection = useActiveSection(sectionIds);
-  
-    function ScrollToSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-        offset: -100,
-      });
-    
-    }
+const Menu = () => {
+  /* Define which section ID's are observed by useActiveSection observer */
+  const sectionIds = ["hero", "about", "psycho-work", "offer", "contact"];
+  const activeSection = useActiveSection(sectionIds);
 
+  function ScrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
 
   const MenuLink = ({ text, sectionId }) => {
     return (

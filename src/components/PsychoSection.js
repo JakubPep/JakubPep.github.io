@@ -8,7 +8,7 @@ import forkPhoto from "../images/fork-photo.png";
 const PsychoSection = () => {
   return (
     <>
-      <PsychoElement id="psycho-work">
+      <PsychoElement>
         <h3 className="section-title">Konsultacje psychologiczne</h3>
         <CirclePhoto
           className="photo-right"

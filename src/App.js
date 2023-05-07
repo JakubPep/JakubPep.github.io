@@ -35,11 +35,11 @@ function App() {
       <SectionDivider id="about"/>
       <About />
       <Education />
-      <SectionDivider />
+      <SectionDivider id="psycho-work"/>
       <PsychoSection />
-      <SectionDivider />
+      <SectionDivider id="offer"/>
       <OfferSection />
-      <SectionDivider />
+      <SectionDivider id="contact"/>
       <Footer />
     </>
   );

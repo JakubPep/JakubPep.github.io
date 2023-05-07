@@ -55,7 +55,7 @@ const Footer = () => {
     const showHideReservationsPopup = () => setTrigger(!trigger);
   return (
     <>
-      <FooterBg id="contact" className="contact-section">
+      <FooterBg className="contact-section">
         <h2 className="section-title">Zapraszam do kontaktu!</h2>
         <FooterContainer>
           <CirclePhoto
