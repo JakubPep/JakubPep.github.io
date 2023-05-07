@@ -26,17 +26,13 @@ function App() {
     observer.observe(document.querySelector(".contact-logo"));
   });
 
-  const sectionObserver = new IntersectionObserver((entries) => {
-
-  })
-
 
 
   return (
     <>
       <MenuDesktop />
       <Hero height="100vh" />
-      <SectionDivider />
+      <SectionDivider id="about"/>
       <About />
       <Education />
       <SectionDivider />

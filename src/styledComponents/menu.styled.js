@@ -27,15 +27,15 @@ export const MenuBar = styled.nav`
         background-color: transparent;
 
         border: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
       }
 
       .active-section {
-        animation: underlineAppear 1.2s;
+        animation: underlineAppear 1s;
         text-decoration: underline;
-        text-decoration-color: ${COLORS.dark_pink};
+        text-decoration-color: ${COLORS.light_pink};
         text-decoration-thickness: 4px;
       }
 
@@ -45,10 +45,26 @@ export const MenuBar = styled.nav`
           text-decoration-thickness: 0px;
         }
         100% {
-          text-decoration-color: ${COLORS.dark_pink};
           text-decoration-thickness: 4px;
         }
       }
     }
   }
+`;
+
+export const MenuBarLogo = styled.div`
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  left: 5%;
+  top: 0;
+  background-color: ${COLORS.light_green};
+  background-image: url(${(props) => props.photoUrl});
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 50% 50%;
+  z-index: 101;
+  animation: smoothAppear 1s;
+  
 `;

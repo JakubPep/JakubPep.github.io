@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
 
 export const CirclePhoto = styled.img`
   width: ${(props) => props.width};
