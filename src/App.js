@@ -8,9 +8,10 @@ import OfferSection from "./components/offer/OfferSection";
 import Footer from "./components/Footer";
 import MenuDesktop from "./components/menu/MenuDesktop";
 import { useWindowWidth } from "./hooks/useWindowWidth";
+import MenuMobile from "./components/menu/MenuMobile";
 
 function App() {
-  console.log(useWindowWidth());
+  const windowWidth = useWindowWidth();
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       // If the element is visible
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <>
-      <MenuDesktop />
+      {windowWidth > "500" ? <MenuDesktop /> : <MenuMobile />}
       <Hero height="100vh" />
       <SectionDivider id="about"/>
       <About />

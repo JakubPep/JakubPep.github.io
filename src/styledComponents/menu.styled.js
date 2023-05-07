@@ -2,20 +2,22 @@ import styled from "styled-components";
 import { COLORS } from "../Vars";
 
 export const MenuBar = styled.nav`
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: ${COLORS.light_green};
+  box-shadow: 0px 1px 5px ${COLORS.light_green_opacity};
+  padding: 0;
   ul {
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: ${COLORS.light_green};
-    box-shadow: 0px 1px 5px ${COLORS.light_green_opacity};
-    padding: 0;
-    margin: 0;
+
     list-style: none;
     li {
       display: inline;
@@ -66,5 +68,4 @@ export const MenuBarLogo = styled.div`
   border-radius: 0 0 50% 50%;
   z-index: 101;
   animation: smoothAppear 1s;
-  
 `;
