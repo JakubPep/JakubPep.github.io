@@ -8,3 +8,10 @@ export const COLORS = {
 };
 
 export const MY_ULR = "http://localhost:3000";
+
+export const SIZES = {
+  small: "450px",
+  medium: "760px",
+  large: "1000px",
+  xLarge: "1400px",
+}

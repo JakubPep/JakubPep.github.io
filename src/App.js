@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      {windowWidth > "500" ? <MenuDesktop /> : <MenuMobile />}
+      {windowWidth > "1000" ? <MenuDesktop /> : <MenuMobile />}
       <Hero height="100vh" />
       <SectionDivider id="about"/>
       <About />

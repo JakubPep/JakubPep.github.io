@@ -42,9 +42,26 @@ export const MenuVisible = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   img {
     box-shadow: none;
+  }
+
+  @media (min-width: 500px) {
+    gap: 0;
+
+    img.menuCloseIcon {
+      height: 30px;
+      width: 30px;
+    }
+    img.menuOpenLogo {
+      display: none;
+    }
+  }
+
+  @media (min-width: 760px) {
+    img.menuOpenLogo {
+      display: block;
+    }
   }
 `;
 

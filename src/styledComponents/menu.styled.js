@@ -52,7 +52,7 @@ export const MenuBar = styled.div`
       }
     }
   }
-  @media (max-width: 450px){
+  @media (max-width: 1000px){
     display: flex;
     justify-content: center;
     ul{
@@ -63,6 +63,7 @@ export const MenuBar = styled.div`
       padding: 0;
       li{
         margin: 0 0 5px 0;
+        display: block;
       }
     }
   }

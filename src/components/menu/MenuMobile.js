@@ -16,7 +16,7 @@ import { CirclePhoto } from "../../styledComponents/circlePhoto.styled";
 import Menu from "./Menu";
 
 const MenuMobile = () => {
-  const [menuActive, setMenuActive] = useState(true);
+  const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenuActive = function () {
     setMenuActive(!menuActive);
@@ -43,18 +43,31 @@ const MenuMobile = () => {
         {menuActive && (
           <MenuVisibleBg onClick={toggleMenuActive}>
             <MenuVisible onClick={(e) => e.stopPropagation()}>
-              <MenuHideIcon src={faXmark} onClick={toggleMenuActive} />
+              <MenuHideIcon className="menuCloseIcon" src={faXmark} onClick={toggleMenuActive} />
               <CirclePhoto
+                className="menuOpenLogo"
                 photoUrl={logoSmall}
-                width="65vw"
-                height="65vw"
+                width="55vw"
+                height="55vw"
                 borderWidth="none"
                 boxShadow="none"
               />
               <Menu />
               <MenuSocials>
-                <a href="https://www.instagram.com/psycho_pracownia/" target="_blank" rel="noreferrer noopener"><img src={igIcon} alt="Instagram"></img></a>
-                <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src={fbIcon} alt="Facebook"></img></a>
+                <a
+                  href="https://www.instagram.com/psycho_pracownia/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img src={igIcon} alt="Instagram"></img>
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img src={fbIcon} alt="Facebook"></img>
+                </a>
               </MenuSocials>
             </MenuVisible>
           </MenuVisibleBg>

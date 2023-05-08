@@ -18,12 +18,6 @@ const About = () => {
             psychodietetyczką.
           </p>
           <p>
-            Pomagam moim klientom i klientkom odzyskać spokój i radość z
-            jedzenia, wyzwolić się od zasad restrykcyjnych diet, odbudować
-            pozytywną relację z jedzeniem i swoim ciałem oraz wyjść z zaburzeń
-            odżywiania.
-          </p>
-          <p>
             Konsultacje, które prowadzę to spotkania w partnerskiej atmosferze,
             skupiające się na przepracowaniu doświadczanych trudności.
           </p>
