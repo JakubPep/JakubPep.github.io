@@ -27,6 +27,7 @@ export const MenuBar = styled.div`
         padding: 13px;
         max-height: 60px;
         background-color: transparent;
+        color: ${COLORS.font_black};
 
         border: none;
         font-size: 1.2rem;
