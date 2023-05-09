@@ -1,7 +1,7 @@
 import React from "react";
 import useActiveSection from "../../hooks/useActiveSection";
 
-const Menu = (menuActive={menuActive}) => {
+const Menu = ({menuActive, toggleMenuActive}) => {
   /* Define which section ID's are observed by useActiveSection observer */
   const sectionIds = ["hero", "about", "psycho-work", "offer", "contact"];
   const activeSection = useActiveSection(sectionIds);
@@ -15,12 +15,17 @@ const Menu = (menuActive={menuActive}) => {
   }
 
   const MenuLink = ({ text, sectionId }) => {
+    const handleClick = () => {
+      ScrollToSection(sectionId);
+      toggleMenuActive();
+    };
+
     return (
       <>
         <li>
           <button
             className={sectionId === activeSection ? "active-section" : ""}
-            onClick={() => ScrollToSection(sectionId)}
+            onClick={handleClick}
           >
             {text}
           </button>
