@@ -83,7 +83,7 @@ export const PsychoElement = styled.div`
       font-size: 1.15rem;
     }
     li {
-      margin-left: 1rem;
+      margin-left: 2rem;
     }
     .reverse {
       flex-direction: column;

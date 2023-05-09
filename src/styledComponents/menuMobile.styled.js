@@ -9,21 +9,29 @@ export const MenuHidden = styled.div`
   justify-content: space-between;
 
   button {
-    height: 60px;
-    width: 60px;
     padding: 0;
     background-color: transparent;
     border: none;
+
     img {
       height: 80%;
       max-height: 400px;
       width: 80%;
       max-width: 400px;
+      vertical-align: middle;
     }
     .menuLogoSmall {
       height: 100%;
       width: 100%;
     }
+  }
+  .menu-toggler {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+  }
+  .menubar-logo {
+    height: 100%;
   }
 `;
 
@@ -58,8 +66,6 @@ export const MenuVisible = styled.div`
 
   animation-delay: 0.2s;
   animation: slipFromLeft 0.4s ease-in-out;
-
-  
 
   img {
     box-shadow: none;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
+import { COLORS, SIZES } from "../Vars";
 
 export const FooterBg = styled.div`
   justify-content: center;
@@ -9,7 +9,7 @@ export const FooterBg = styled.div`
   padding-top: 60px;
   .section-title {
     text-align: center;
-    @media (max-width: 450px) {
+    @media (max-width: ${SIZES.medium}) {
     margin-bottom: 30px;
   }
   }
@@ -31,7 +31,7 @@ export const FooterContainer = styled.div`
     min-height: 350px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: ${SIZES.medium}) {
     flex-direction: column;
     margin: auto;
     width: 90%;

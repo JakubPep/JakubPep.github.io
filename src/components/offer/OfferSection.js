@@ -60,11 +60,9 @@ const OfferSection = () => {
         setDetails({
           title:
             "W przypadku dłuższej współpracy, masz możliwość wykupienia pakietu spotkań:",
-          firstP: "4 konsultacje // do wykorzystania w ciągu 60 dni //",
-          secondP: "Koszt: 500 zł",
-          thirdP: "     ",
-          fourthP: "6 konsultacji //do wykorzystania w ciągu 90 dni//",
-          fifthP: "Koszt: 700 zł",
+          firstP: "4 konsultacje",
+          secondP: "// do wykorzystania w ciągu 60 dni //",
+          price: "500 zł",
         });
         if (activeOffer === "3") {
           setShowDetails(false);
@@ -76,29 +74,27 @@ const OfferSection = () => {
         break;
       case "4":
         setDetails({
-          title: "Warsztaty i szkolenia",
-          firstP:
-            "Osoby/firmy zainteresowane ofertą warsztatów i szkoleń z zakresu psychologii zapraszam do kontaktu.",
-          price: "ustalany indywidualnie",
-          time: "ustalany indywidualnie",
+          title:
+            "W przypadku dłuższej współpracy, masz możliwość wykupienia pakietu spotkań:",
+          firstP: "6 konsultacji",
+          secondP: "//do wykorzystania w ciągu 90 dni//",
+          price: "700 zł",
         });
         if (activeOffer === "4") {
           setShowDetails(false);
           setActiveOffer("");
         } else {
           setShowDetails(true);
-          setActiveOffer("4");
+          setActiveOffer("54");
         }
         break;
       case "5":
         setDetails({
-          title: "Na tym spotkaniu:",
+          title: "Warsztaty i szkolenia",
           firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
-          secondP: "I tak się to życie toczy. No.",
-          thirdP: "I tak się to życie toczy. No.",
-          fourthP: "I tak się to życie toczy. No.",
-          fifthP: "I tak się to życie toczy. No.",
+            "Osoby/firmy zainteresowane ofertą warsztatów i szkoleń z zakresu psychologii zapraszam do kontaktu.",
+          price: "ustalany indywidualnie",
+          time: "ustalany indywidualnie",
         });
         if (activeOffer === "5") {
           setShowDetails(false);
@@ -171,8 +167,9 @@ const OfferSection = () => {
           <h3 className="section-title">Oferta</h3>
           <Offer value={"1"} offerName="Konsultacja psychologiczna"></Offer>
           <Offer value={"2"} offerName="Konsultacja psychodietetyczna" />
-          <Offer value={"3"} offerName="Pakiety konsultacji" />
-          <Offer value={"4"} offerName="Warsztaty i szkolenia" />
+          <Offer value={"3"} offerName="Pakiet 4 konsultacji" />
+          <Offer value={"4"} offerName="Pakiet 6 konsultacji" />
+          <Offer value={"5"} offerName="Warsztaty i szkolenia" />
         </OfferListContainer>
         {showDetails && windowWidth > "650" && <OfferDetails />}
       </OfferDescrContainer>

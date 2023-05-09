@@ -30,10 +30,10 @@ const MenuMobile = () => {
     <>
       <MenuBar>
         <MenuHidden>
-          <button onClick={toggleMenuActive}>
+          <button className="menu-toggler" onClick={toggleMenuActive}>
             <img src={faBars} alt="rozwiń menu"></img>
           </button>
-          <button onClick={ScrollToTop}>
+          <button className="menubar-logo" onClick={ScrollToTop}>
             <img
               className="menuLogoSmall"
               src={logoSmall}

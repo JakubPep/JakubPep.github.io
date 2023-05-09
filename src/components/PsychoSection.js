@@ -9,7 +9,6 @@ const PsychoSection = () => {
   return (
     <>
       <PsychoElement>
-        <h3 className="section-title">Konsultacje psychologiczne</h3>
         <DescriptionContainer className="reverse">
         <CirclePhoto
           className="photo-right"
@@ -20,6 +19,7 @@ const PsychoSection = () => {
           borderWidth="3px"
         />
         <div>
+        <h3 className="section-title">Konsultacje psychologiczne</h3>
           <p>
           Spotkania koncentrują się na pracy z przeżywanymi trudnościami i
           problemami.
@@ -45,7 +45,6 @@ const PsychoSection = () => {
       </PsychoElement>
 
       <PsychoElement>
-        <h3 className="section-title right">Konsultacje psychodietetyczne</h3>
         <DescriptionContainer >
         <CirclePhoto
           className="photo-right"
@@ -56,6 +55,7 @@ const PsychoSection = () => {
           borderWidth="3px"
         />
         <div>
+        <h3 className="section-title right">Konsultacje psychodietetyczne</h3>
         <p>
           Spotkania dotyczą Twoich doświadczeń związanych z odżywianiem się.
         </p>
