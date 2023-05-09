@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0aeb8cd.css",
-    "main.js": "/static/js/main.b4d1bbc4.js",
+    "main.css": "/static/css/main.45c09e46.css",
+    "main.js": "/static/js/main.3eb8ee13.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.1b7f7a533a4827380f1b.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.afc687d61fa157c8f0b1.jpg",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.86ec801e8388787808e5.jpg",
@@ -17,12 +17,13 @@
     "static/media/fa-phone-icon.svg": "/static/media/fa-phone-icon.b4a074baa24a40414433c87293d74020.svg",
     "static/media/fa-mail-icon.svg": "/static/media/fa-mail-icon.6345f82ededa4dc800949734956dc764.svg",
     "static/media/fa-fb-icon.svg": "/static/media/fa-fb-icon.e4d1358060c01a3e706738bb8983b000.svg",
+    "static/media/fa-arrow-right.svg": "/static/media/fa-arrow-right.34ee77d6383aa99efa4a9cbb09cf29c7.svg",
     "static/media/fa-place-icon.svg": "/static/media/fa-place-icon.2e0ef750ef3975644482ba424ba65ae0.svg",
-    "main.d0aeb8cd.css.map": "/static/css/main.d0aeb8cd.css.map",
-    "main.b4d1bbc4.js.map": "/static/js/main.b4d1bbc4.js.map"
+    "main.45c09e46.css.map": "/static/css/main.45c09e46.css.map",
+    "main.3eb8ee13.js.map": "/static/js/main.3eb8ee13.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0aeb8cd.css",
-    "static/js/main.b4d1bbc4.js"
+    "static/css/main.45c09e46.css",
+    "static/js/main.3eb8ee13.js"
   ]
 }
