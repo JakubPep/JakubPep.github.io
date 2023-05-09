@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../Vars";
+import { COLORS, SIZES } from "../../Vars";
 
 export const CoursesContainer = styled.div`
   width: 90%;
@@ -12,11 +12,13 @@ export const CoursesContainer = styled.div`
     max-height: 400px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: ${SIZES.large}) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img {
-      @media (max-width: 450px) {
+      @media (max-width: ${SIZES.large}) {
         margin: 10px auto 40px auto;
       }
     }
@@ -31,7 +33,7 @@ export const CourseRight = styled.div`
   max-width: 60%;
   gap: 20px;
 
-  @media (max-width: 450px) {
+  @media (max-width: ${SIZES.large}) {
     max-width: 90%;
   }
 `;
@@ -51,7 +53,8 @@ export const SingleCourse = styled.div`
     line-height: 1.4rem;
     text-align: center;
   }
-  @media (max-width: 450px) {
+  @media (max-width: ${SIZES.medium}) {
+    width: auto;
     border-radius: 0;
     p {
       font-size: 1rem;

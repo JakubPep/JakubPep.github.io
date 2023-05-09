@@ -9,12 +9,13 @@ body {
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 2px;
   color: #1e212b;
+
 }
 
 .float-left {
@@ -37,4 +38,13 @@ body {
   animation: smoothAppear 2s;
 }
 
-
+@keyframes slipFromLeft {
+  0% {
+   left: -50vw;
+   width: 0;
+  } 
+  100% {
+   left: 0;
+   width: 70vw;
+  }
+ }

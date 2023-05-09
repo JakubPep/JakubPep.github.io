@@ -43,7 +43,11 @@ const MenuMobile = () => {
         {menuActive && (
           <MenuVisibleBg onClick={toggleMenuActive}>
             <MenuVisible onClick={(e) => e.stopPropagation()}>
-              <MenuHideIcon className="menuCloseIcon" src={faXmark} onClick={toggleMenuActive} />
+              <MenuHideIcon
+                className="menuCloseIcon"
+                src={faXmark}
+                onClick={toggleMenuActive}
+              />
               <CirclePhoto
                 className="menuOpenLogo"
                 photoUrl={logoSmall}
@@ -52,7 +56,7 @@ const MenuMobile = () => {
                 borderWidth="none"
                 boxShadow="none"
               />
-              <Menu />
+              <Menu menuActive={menuActive} />
               <MenuSocials>
                 <a
                   href="https://www.instagram.com/psycho_pracownia/"
@@ -62,7 +66,7 @@ const MenuMobile = () => {
                   <img src={igIcon} alt="Instagram"></img>
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.facebook.com/pracowniapsychologiiipsychodietetyki"
                   target="_blank"
                   rel="noreferrer noopener"
                 >

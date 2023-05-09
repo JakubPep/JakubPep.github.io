@@ -1,6 +1,6 @@
 import React from "react";
 import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
-import { PsychoElement } from "../styledComponents/psycho.styled";
+import { DescriptionContainer, PsychoElement } from "../styledComponents/psycho.styled";
 import { COLORS } from "../Vars";
 import brainPhoto from "../images/brain-photo.png";
 import forkPhoto from "../images/fork-photo.png";
@@ -10,6 +10,7 @@ const PsychoSection = () => {
     <>
       <PsychoElement>
         <h3 className="section-title">Konsultacje psychologiczne</h3>
+        <DescriptionContainer className="reverse">
         <CirclePhoto
           className="photo-right"
           photoUrl={brainPhoto}
@@ -18,7 +19,8 @@ const PsychoSection = () => {
           borderColor={COLORS.light_pink}
           borderWidth="3px"
         />
-        <p>
+        <div>
+          <p>
           Spotkania koncentrują się na pracy z przeżywanymi trudnościami i
           problemami.
         </p>
@@ -38,9 +40,13 @@ const PsychoSection = () => {
           <li>jesteś w trudnej dla Ciebie sytuacji życiowej;</li>
           <li>potrzebujesz rozmowy pełnej empatii i zrozumienia.</li>
         </ul>
+        </div>
+        </DescriptionContainer>
       </PsychoElement>
+
       <PsychoElement>
-        <h3 className="section-title">Konsultacje psychodietetyczne</h3>
+        <h3 className="section-title right">Konsultacje psychodietetyczne</h3>
+        <DescriptionContainer >
         <CirclePhoto
           className="photo-right"
           photoUrl={forkPhoto}
@@ -49,6 +55,7 @@ const PsychoSection = () => {
           borderColor={COLORS.light_pink}
           borderWidth="3px"
         />
+        <div>
         <p>
           Spotkania dotyczą Twoich doświadczeń związanych z odżywianiem się.
         </p>
@@ -62,6 +69,8 @@ const PsychoSection = () => {
           <li>potrzebujesz zmiany swoich nawyków żywieniowych;</li>
           <li>oczekujesz długotrwałych efektów.</li>
         </ul>
+        </div>
+        </DescriptionContainer>
       </PsychoElement>
     </>
   );

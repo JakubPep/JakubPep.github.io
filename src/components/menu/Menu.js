@@ -1,7 +1,7 @@
 import React from "react";
 import useActiveSection from "../../hooks/useActiveSection";
 
-const Menu = () => {
+const Menu = (menuActive={menuActive}) => {
   /* Define which section ID's are observed by useActiveSection observer */
   const sectionIds = ["hero", "about", "psycho-work", "offer", "contact"];
   const activeSection = useActiveSection(sectionIds);
@@ -11,6 +11,7 @@ const Menu = () => {
     section.scrollIntoView({
       behavior: "smooth",
     });
+    
   }
 
   const MenuLink = ({ text, sectionId }) => {

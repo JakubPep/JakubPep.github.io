@@ -11,7 +11,9 @@ export const MY_ULR = "http://localhost:3000";
 
 export const SIZES = {
   small: "450px",
-  medium: "760px",
+  medium: "768px",
   large: "1000px",
+  laptop: "1200px",
   xLarge: "1400px",
+  offerActive: "650px",
 }

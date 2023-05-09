@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
+import { COLORS, SIZES } from "../Vars";
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -7,7 +7,6 @@ export const AboutContainer = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 60px;
-  padding-top: 60px;
   img{
     min-width: 300px;
     max-width: 450px;
@@ -15,7 +14,7 @@ export const AboutContainer = styled.div`
     max-height: 450px;
   }
 
-  @media (max-width: 450px){
+  @media (max-width: ${SIZES.offerActive}){
     flex-direction: column;
     width: 90%;
     margin-left: auto;
@@ -41,7 +40,7 @@ export const AboutDescription = styled.div`
     margin: 0;
   }
 
-  @media (max-width: 450px){
+  @media (max-width: ${SIZES.medium}){
     align-items: center;
   }
 `;

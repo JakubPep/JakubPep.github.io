@@ -47,7 +47,7 @@ export const OfferListContainer = styled.div`
     left: 17%;
   }
 
-  @media (max-width: ${SIZES.small}) {
+  @media (max-width: ${SIZES.offerActive}) {
     width: 100%;
     display: flex;
     flex-direction: column;

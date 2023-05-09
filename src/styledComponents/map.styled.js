@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
+import { COLORS, SIZES } from "../Vars";
 
 export const Map = styled.div`
   width: 100%;
@@ -14,10 +14,12 @@ export const Map = styled.div`
     border: 4px solid ${COLORS.light_pink};
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: ${SIZES.large}) {
     padding: 0;
     .map-embeed {
       width: 100vw;
+      border-right: none;
+      border-left: none;
     }
   }
 `;

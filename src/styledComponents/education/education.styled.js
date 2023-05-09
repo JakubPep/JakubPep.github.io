@@ -88,10 +88,12 @@ export const SchoolDescription = styled.span`
   margin: 0;
   max-width: 350px;
   text-align: center;
-  white-space: break-spaces;
   p{
     margin: 0;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
     font-size: 1.1rem;
+  }
+  p.school-name {
+    font-weight: 700;
   }
 `;

@@ -19,11 +19,13 @@ const OfferSection = () => {
         setDetails({
           title: "Na tym spotkaniu:",
           firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
-          secondP: "I tak się to życie toczy. No.",
-          thirdP: "I tak się to życie toczy. No.",
-          fourthP: "I tak się to życie toczy. No.",
-          fifthP: "I tak się to życie toczy. No.",
+            "Porozmawiamy o doświadczanych przez Ciebie trudnościach w zakresie funkcjonowania psychologicznego.",
+          secondP: "Określimy, czego dotyczy problem.",
+          thirdP: "Odpowiemy na nurtujące Cię pytania.",
+          fourthP:
+            "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
+          time: "50 minut",
+          price: "150 zł",
         });
         if (activeOffer === "1") {
           setShowDetails(false);
@@ -35,12 +37,16 @@ const OfferSection = () => {
 
         break;
       case "2":
-        
         setDetails({
           title: "Na tym spotkaniu:",
-          secondP: "Jednorazowe spotkanie stacjonarne lub online.",
-          fourthP: "Czas trwania: 50 minut",
-          fifthP: "Koszt: 140 zł",
+          firstP: "Przeanalizujemy Twoją sytuację związaną z odżywianiem się.",
+          secondP:
+            "Przyjrzymy się schematom i nawykom jedzeniowym w jakich funkcjonujesz.",
+          thirdP: "Określimy, czego dotyczy problem.",
+          fourthP:
+            "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
+          time: "50 minut",
+          price: "150 zł",
         });
         if (activeOffer === "2") {
           setShowDetails(false);
@@ -52,13 +58,13 @@ const OfferSection = () => {
         break;
       case "3":
         setDetails({
-          title: "Na tym spotkaniu:",
-          firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
-          secondP: "I tak się to życie toczy. No.",
-          thirdP: "I tak się to życie toczy. No.",
-          fourthP: "I tak się to życie toczy. No.",
-          fifthP: "I tak się to życie toczy. No.",
+          title:
+            "W przypadku dłuższej współpracy, masz możliwość wykupienia pakietu spotkań:",
+          firstP: "4 konsultacje // do wykorzystania w ciągu 60 dni //",
+          secondP: "Koszt: 500 zł",
+          thirdP: "     ",
+          fourthP: "6 konsultacji //do wykorzystania w ciągu 90 dni//",
+          fifthP: "Koszt: 700 zł",
         });
         if (activeOffer === "3") {
           setShowDetails(false);
@@ -70,13 +76,11 @@ const OfferSection = () => {
         break;
       case "4":
         setDetails({
-          title: "Na tym spotkaniu:",
+          title: "Warsztaty i szkolenia",
           firstP:
-            "In velit culpa magna eiusmod laboris anim non esse ipsum exercitation. Minim consectetur deserunt dolore sunt mollit excepteur minim eu aute. Occaecat non ex anim excepteur dolor commodo.",
-          secondP: "I tak się to życie toczy. No.",
-          thirdP: "I tak się to życie toczy. No.",
-          fourthP: "I tak się to życie toczy. No.",
-          fifthP: "I tak się to życie toczy. No.",
+            "Osoby/firmy zainteresowane ofertą warsztatów i szkoleń z zakresu psychologii zapraszam do kontaktu.",
+          price: "ustalany indywidualnie",
+          time: "ustalany indywidualnie",
         });
         if (activeOffer === "4") {
           setShowDetails(false);
@@ -126,7 +130,7 @@ const OfferSection = () => {
         >
           {offerName}
         </button>
-        {showDetails && windowWidth <= "760" && activeOffer === value && (
+        {showDetails && windowWidth <= "650" && activeOffer === value && (
           <OfferDetails />
         )}
       </>
@@ -143,6 +147,18 @@ const OfferSection = () => {
           <p className="descr-paragraph">{details.thirdP}</p>
           <p className="descr-paragraph">{details.fourthP}</p>
           <p className="descr-paragraph">{details.fifthP}</p>
+          {details.time && (
+            <p className="descr-time">
+              <span className="bold">Czas Trwania: </span>
+              {details.time}
+            </p>
+          )}
+          {details.price && (
+            <p className="descr-price">
+              <span className="bold">Koszt: </span>
+              {details.price}
+            </p>
+          )}
         </OfferDetailsContainer>
       </>
     );
@@ -150,16 +166,15 @@ const OfferSection = () => {
 
   return (
     <>
-      <OfferDescrContainer windowWidth={windowWidth}>
+      <OfferDescrContainer>
         <OfferListContainer>
           <h3 className="section-title">Oferta</h3>
           <Offer value={"1"} offerName="Konsultacja psychologiczna"></Offer>
-          <Offer value={"2"} offerName="Jadłospis 7-dniowy" />
-          <Offer value={"3"} offerName="Konsultacja psychodietetyczna" />
-          <Offer value={"4"} offerName="Warsztaty o zdrowym odżywianiu" />
-          <Offer value={"5"} offerName="Lekcja dla najmłodszych" />
+          <Offer value={"2"} offerName="Konsultacja psychodietetyczna" />
+          <Offer value={"3"} offerName="Pakiety konsultacji" />
+          <Offer value={"4"} offerName="Warsztaty i szkolenia" />
         </OfferListContainer>
-        {showDetails && windowWidth > "760" && <OfferDetails />}
+        {showDetails && windowWidth > "650" && <OfferDetails />}
       </OfferDescrContainer>
     </>
   );

@@ -16,7 +16,9 @@ export const MenuHidden = styled.div`
     border: none;
     img {
       height: 80%;
+      max-height: 400px;
       width: 80%;
+      max-width: 400px;
     }
     .menuLogoSmall {
       height: 100%;
@@ -28,7 +30,18 @@ export const MenuHidden = styled.div`
 export const MenuVisibleBg = styled.div`
   height: 100vh;
   width: 100vw;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
+  animation: darkenBg 0.1s linear;
+
+  @keyframes darkenBg {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
 `;
 
 export const MenuVisible = styled.div`
@@ -42,8 +55,16 @@ export const MenuVisible = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  animation-delay: 0.2s;
+  animation: slipFromLeft 0.4s ease-in-out;
+
+  
+
   img {
     box-shadow: none;
+    max-width: 350px;
+    max-height: 350px;
   }
 
   @media (min-width: 500px) {

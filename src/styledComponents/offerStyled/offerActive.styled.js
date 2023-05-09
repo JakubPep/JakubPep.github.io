@@ -22,9 +22,9 @@ export const OfferDetailsContainer = styled.div`
     }
   }
   position: relative;
-  width: 35vw;
+  width: 40vw;
   padding-bottom: 50px;
-  min-height: 300px;
+  padding-top: 40px;
   border: 2px solid ${COLORS.light_pink};
   border-right: none;
   border-radius: 100px 0 0 100px;
@@ -43,16 +43,31 @@ export const OfferDetailsContainer = styled.div`
     margin-left: 10%;
     margin-right: 10%;
   }
+  p {
+    span.bold {
+      font-weight: 700;
+    }
+  }
+  .descr-time {
+    margin-top: 25px;
+  }
 
-  @media (max-width: ${SIZES.medium}) {
+  .descr-time, .descr-price {
+    text-align: end;
+    font-size: 1.1rem;
+    margin: 0 10% 15px 0;
+  }
+
+  @media (max-width: ${SIZES.offerActive}) {
     width: 95%;
     min-height: auto;
     border: 2px solid ${COLORS.dark_pink};
     border-radius: 75px;
     background-color: white;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     margin-bottom: 20px;
-    animation: scrollDown 0.5s ease-in-out;
+    animation: scrollDown 0.3s ease-in-out;
     transform-origin: 50% 0;
 
     @keyframes scrollDown {
@@ -60,14 +75,14 @@ export const OfferDetailsContainer = styled.div`
         height: 0;
         top: -20px;
         opacity: 0;
-        transform: scaleY(0.7);
+        transform: scale(0.7);
       }
 
       100% {
         height: 100%;
         top: 0;
         opacity: 1;
-        transform: scaleY(1);
+        transform: scale(1);
       }
     }
 
@@ -76,7 +91,7 @@ export const OfferDetailsContainer = styled.div`
       font-size: 1.2rem;
     }
     .descr-paragraph {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.3rem;
     }
   }

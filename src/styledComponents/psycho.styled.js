@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { COLORS } from "../Vars";
+import { COLORS, SIZES } from "../Vars";
+import arrowRight from "../images/svg/fa-arrow-right.svg";
 
 export const PsychoElement = styled.div`
   width: 80%;
@@ -7,7 +8,6 @@ export const PsychoElement = styled.div`
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
-  padding-top: 60px;
 
   margin-left: auto;
   margin-right: auto;
@@ -26,40 +26,81 @@ export const PsychoElement = styled.div`
   }
   .section-title.right {
     text-align: end;
-    margin-top: 100px;
   }
-  .photo-right {
-    float: right;
-    margin: 0 0 20px 20px;
-  }
-  .photo-left {
-    float: left;
-    margin: 0 40px 0px 0;
-  }
-  p, li {
-    font-size: 1.25rem;
+
+  p,
+  li {
+    font-size: 1.15rem;
     line-height: 1.6rem;
     color: ${COLORS.font_black};
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
 
   li {
     margin-bottom: 10px;
   }
 
-  @media (max-width: 450px) {
+  .arrow {
+    color: ${COLORS.light_pink};
+  }
+
+  li::before {
+    content: " ";
+    background-image: url(${arrowRight});
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.15rem;
+    width: 1.15rem;
+    margin-left: -2rem;
+    margin-right: 1rem;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: ${SIZES.large}) {
     width: 90%;
     display: flex;
     flex-direction: column;
-    .photo-right,
-    .photo-left {
-      float: none;
-      margin: 0 auto;
-    }
-    .section-title, .section-title.right{
+
+    .section-title,
+    .section-title.right {
       text-align: center;
+      font-size: 2rem;
     }
     .section-title.right {
       margin-top: 50px;
     }
+    p,
+    li {
+      font-size: 1.15rem;
+    }
+    li {
+      margin-left: 1rem;
+    }
+    .reverse {
+      flex-direction: column;
+    }
+  }
+`;
+
+export const DescriptionContainer = styled.div`
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: ${SIZES.large}) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
   }
 `;
