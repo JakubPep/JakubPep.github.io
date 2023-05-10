@@ -5,6 +5,8 @@ export const MenuBar = styled.div`
   height: 60px;
   width: 100%;
   position: fixed;
+  display: flex;
+  justify-content: flex-end;
   top: 0;
   left: 0;
   z-index: 100;
@@ -15,7 +17,7 @@ export const MenuBar = styled.div`
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 
     list-style: none;

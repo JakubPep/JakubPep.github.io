@@ -31,9 +31,9 @@ const Courses = () => {
           borderWidth="2px"
         />
         <CourseRight>
-          <Course courseName="Kurs zorganizowany przez ministerstwo kultury i rozwoju w temacie pomocy niepełnoletnim z ich zdrowiem psychicznym." />
-          <Course courseName="Szkolenie z pierwszej pomocy." />
-          <Course courseName="Szkolenie z pierwszej pomocy." />
+          <Course courseName='Szkolenie: "Jak pracować z pacjentem, który żyje w ciągłym lęku i zamartwianiu?"' />
+          <Course courseName='Szkolenie: "Podstawy porozumienia bez przemocy (NVC) dla psychologów i psychoterapeutów"' />
+          <Course courseName='Szkolenie: "Jak dostosować strategię pomocy do sytuacji pacjenta?"' />
         </CourseRight>
       </CoursesContainer>
     </>

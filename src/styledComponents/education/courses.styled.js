@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { COLORS, SIZES } from "../../Vars";
 
 export const CoursesContainer = styled.div`
-  width: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     margin-right: 40px;
@@ -34,7 +37,9 @@ export const CourseRight = styled.div`
   gap: 20px;
 
   @media (max-width: ${SIZES.large}) {
+    min-width: 90%;
     max-width: 90%;
+    align-items: stretch;
   }
 `;
 
@@ -53,7 +58,7 @@ export const SingleCourse = styled.div`
     line-height: 1.4rem;
     text-align: center;
   }
-  @media (max-width: ${SIZES.medium}) {
+  @media (max-width: ${SIZES.large}) {
     width: auto;
     border-radius: 0;
     p {

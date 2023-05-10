@@ -22,7 +22,7 @@ export const MenuHidden = styled.div`
     }
     .menuLogoSmall {
       height: 100%;
-      width: 100%;
+      width: 60px;
     }
   }
   .menu-toggler {

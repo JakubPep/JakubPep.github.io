@@ -31,8 +31,10 @@ export const OfferDetailsContainer = styled.div`
   overflow: hidden;
 
   .descr-title {
+    font-weight: 700;
     font-size: 1.3rem;
-    margin-left: 15%;
+    margin-left: 10%;
+    padding-right: 10px;
     text-align: start;
     color: ${COLORS.dark_pink};
   }

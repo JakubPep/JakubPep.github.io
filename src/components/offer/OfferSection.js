@@ -25,7 +25,7 @@ const OfferSection = () => {
           fourthP:
             "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
           time: "50 minut",
-          price: "150 zł",
+          price: "140 zł",
         });
         if (activeOffer === "1") {
           setShowDetails(false);
@@ -46,7 +46,7 @@ const OfferSection = () => {
           fourthP:
             "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
           time: "50 minut",
-          price: "150 zł",
+          price: "140 zł",
         });
         if (activeOffer === "2") {
           setShowDetails(false);
@@ -85,7 +85,7 @@ const OfferSection = () => {
           setActiveOffer("");
         } else {
           setShowDetails(true);
-          setActiveOffer("54");
+          setActiveOffer("4");
         }
         break;
       case "5":
@@ -145,7 +145,7 @@ const OfferSection = () => {
           <p className="descr-paragraph">{details.fifthP}</p>
           {details.time && (
             <p className="descr-time">
-              <span className="bold">Czas Trwania: </span>
+              <span className="bold">Czas trwania: </span>
               {details.time}
             </p>
           )}

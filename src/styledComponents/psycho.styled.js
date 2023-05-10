@@ -75,8 +75,9 @@ export const PsychoElement = styled.div`
       text-align: center;
       font-size: 2rem;
     }
-    .section-title.right {
-      margin-top: 50px;
+    .section-title {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
     p,
     li {
@@ -98,6 +99,9 @@ export const DescriptionContainer = styled.div`
   align-items: center;
 
   @media (max-width: ${SIZES.large}) {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;

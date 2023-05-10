@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../Vars";
+import { COLORS, SIZES } from "../../Vars";
 
 export const EducationContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ export const EducationContainer = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: ${SIZES.large}) {
     padding: 50px 0;
   }
 `;

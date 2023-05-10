@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
 
 export const HeroImage = styled.div`
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
   background-image: url(${bgImage});
