@@ -27,7 +27,6 @@ const Courses = () => {
           height="25vw"
           width="25vw"
           photoUrl={coursesPhoto}
-          alt="zdjęcie z książkami"
           borderColor={COLORS.font_black}
           borderWidth="2px"
         />

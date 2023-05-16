@@ -30,7 +30,6 @@ const About = () => {
         <CirclePhoto
           height="30vw"
           width="30vw"
-          alt="zdjęcie portretowe"
           photoUrl={aboutPhoto}
           borderWidth="7px"
           borderColor={COLORS.light_pink}

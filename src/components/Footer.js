@@ -74,7 +74,6 @@ const Footer = () => {
           <CirclePhoto
             className="logo-photo contact-logo"
             photoUrl={Logo}
-            alt="logo pracownii"
             width="35vw"
             height="35vw"
           />
