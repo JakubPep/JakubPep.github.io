@@ -12,7 +12,7 @@ const About = () => {
     <>
       <AboutContainer className="about-section">
         <AboutDescription>
-          <h3 className="section-title">O mnie</h3>
+          <h2 className="section-title">O mnie</h2>
           <p>
             Nazywam się Dominika Szałkowska. Jestem psycholożką i
             psychodietetyczką.
@@ -30,6 +30,7 @@ const About = () => {
         <CirclePhoto
           height="30vw"
           width="30vw"
+          alt="zdjęcie portretowe"
           photoUrl={aboutPhoto}
           borderWidth="7px"
           borderColor={COLORS.light_pink}

@@ -33,26 +33,42 @@ const Footer = () => {
           <hr className="details-divider" />
           <p className="contact-detail">
             <img src={phoneIcon} alt="Tel."></img>
-            {phoneNumber}
+            <a className="footer-link" href="Tel: 881 636 634">
+              {phoneNumber}
+            </a>
           </p>
 
           <p className="contact-detail">
             <img src={mailIcon} alt="Email"></img>
-            {email}
+            <a className="footer-link" href="mailto:pracownia.klient@gmail.com">
+              {email}
+            </a>
           </p>
           <p className="contact-detail">
             <img src={placeIcon} alt="Adres"></img>
             {address}
           </p>
           <Socials>
-            <img src={igIcon} alt="Instagram"></img>
-            <img src={fbIcon} alt="Facebook"></img>
+            <a
+              href="https://www.instagram.com/psycho_pracownia/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={igIcon} alt="Instagram"></img>
+            </a>
+            <a
+              href="https://www.facebook.com/pracowniapsychologiiipsychodietetyki"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={fbIcon} alt="Facebook"></img>
+            </a>
           </Socials>
         </ContactContainer>
       </>
     );
   };
-    const showHideReservationsPopup = () => setTrigger(!trigger);
+  const showHideReservationsPopup = () => setTrigger(!trigger);
   return (
     <>
       <FooterBg className="contact-section">
@@ -61,6 +77,7 @@ const Footer = () => {
           <CirclePhoto
             className="logo-photo contact-logo"
             photoUrl={Logo}
+            alt="logo pracownii"
             width="35vw"
             height="35vw"
           />
@@ -73,7 +90,7 @@ const Footer = () => {
           />
         </FooterContainer>
         <MapElement />
-        <button onClick={showHideReservationsPopup} >rezerwuj</button>
+        <button onClick={showHideReservationsPopup}>rezerwuj</button>
       </FooterBg>
       {trigger ? <Popup setTrigger={showHideReservationsPopup} /> : null}
     </>

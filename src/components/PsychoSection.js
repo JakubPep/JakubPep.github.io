@@ -21,7 +21,7 @@ const PsychoSection = () => {
             borderWidth="3px"
           />
           <div>
-            <h3 className="section-title">Konsultacje psychologiczne</h3>
+            <h2 className="section-title">Konsultacje psychologiczne</h2>
             <p>
               Spotkania koncentrują się na pracy z przeżywanymi trudnościami i
               problemami.
@@ -58,9 +58,9 @@ const PsychoSection = () => {
             borderWidth="3px"
           />
           <div>
-            <h3 className="section-title right">
+            <h2 className="section-title right">
               Konsultacje psychodietetyczne
-            </h3>
+            </h2>
             <p>
               Spotkania dotyczą Twoich doświadczeń związanych z odżywianiem się.
             </p>

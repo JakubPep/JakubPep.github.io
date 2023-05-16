@@ -10,8 +10,8 @@ export const FooterBg = styled.div`
   .section-title {
     text-align: center;
     @media (max-width: ${SIZES.medium}) {
-    margin-bottom: 30px;
-  }
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -54,7 +54,6 @@ export const ContactContainer = styled.div`
     font-weight: 700;
     line-height: 2.2rem;
     margin: 0;
-    
   }
   .owner-name {
     font-family: "Times New Roman", Times, serif;
@@ -69,11 +68,15 @@ export const ContactContainer = styled.div`
     margin: 0 0 15px 0;
     border-top: 3px solid ${COLORS.font_black};
     @media (max-width: 450px) {
-    width: 70%;
-  }
+      width: 70%;
+    }
   }
 
   .contact-detail {
+    a.footer-link {
+      text-decoration: none;
+      color: ${COLORS.font_black};
+    }
     font-size: 1.3rem;
     margin: 0.6rem 0 0.6rem 0;
   }

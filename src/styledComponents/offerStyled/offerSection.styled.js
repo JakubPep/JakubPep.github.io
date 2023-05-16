@@ -9,7 +9,7 @@ export const OfferListContainer = styled.div`
   background-color: ${COLORS.light_pink};
   border-radius: 0 165px 165px 0;
 
-  h3.section-title {
+  .section-title {
     padding: 60px;
     color: #fff;
   }
@@ -54,7 +54,7 @@ export const OfferListContainer = styled.div`
     align-items: center;
     
 
-    h3.section-title {
+    .section-title {
       padding-left: 20px;
       align-self: flex-start;
     }

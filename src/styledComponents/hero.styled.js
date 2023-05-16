@@ -30,8 +30,8 @@ export const HeroLogo = styled.div`
   height: 100%;
   border-radius: 50%;
   img {
-    height: 80%;
-    width: auto;
+    width: 85%;
+    height: auto;
     background-color: ${COLORS.light_green_opacity};
     border-radius: 50%;
     max-height: 90%;
@@ -44,7 +44,6 @@ export const HeroLogo = styled.div`
       position: relative;
       top: 20px;
       right: 20px;
-      height: 50%;
     }
   }
 `;

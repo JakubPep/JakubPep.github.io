@@ -164,7 +164,7 @@ const OfferSection = () => {
     <>
       <OfferDescrContainer>
         <OfferListContainer>
-          <h3 className="section-title">Oferta</h3>
+          <h2 className="section-title">Oferta</h2>
           <Offer value={"1"} offerName="Konsultacja psychologiczna"></Offer>
           <Offer value={"2"} offerName="Konsultacja psychodietetyczna" />
           <Offer value={"3"} offerName="Pakiet 4 konsultacji" />

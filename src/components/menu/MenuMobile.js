@@ -63,7 +63,7 @@ const MenuMobile = () => {
                   <img src={igIcon} alt="Instagram"></img>
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.facebook.com/pracowniapsychologiiipsychodietetyki"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
