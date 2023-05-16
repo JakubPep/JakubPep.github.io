@@ -1,7 +1,7 @@
 {
   "name": "pracownia",
   "version": "0.1.0",
-  "homepage": "https://Jakubpep.github.io/",
+  "homepage": "https://psycho-pracownia.pl/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
