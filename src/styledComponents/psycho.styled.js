@@ -98,6 +98,10 @@ export const DescriptionContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  div{
+    max-width: 60%;
+  }
+
   @media (max-width: ${SIZES.large}) {
     width: 95%;
     margin-left: auto;
@@ -106,5 +110,9 @@ export const DescriptionContainer = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 0;
+
+    div {
+      max-width: 100%;
+    }
   }
 `;

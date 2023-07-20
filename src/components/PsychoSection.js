@@ -7,6 +7,7 @@ import {
 import { COLORS } from "../Vars";
 import brainPhoto from "../images/brain-photo.png";
 import forkPhoto from "../images/fork-photo.png";
+import dietPhoto from "../images/dietetics-photo.png";
 
 const PsychoSection = () => {
   return (
@@ -76,6 +77,46 @@ const PsychoSection = () => {
               <li>potrzebujesz zmiany swoich nawyków żywieniowych;</li>
               <li>oczekujesz długotrwałych efektów.</li>
             </ul>
+          </div>
+        </DescriptionContainer>
+      </PsychoElement>
+
+      <PsychoElement>
+        <DescriptionContainer className="reverse">
+          <CirclePhoto
+            photoUrl={dietPhoto}
+            width="22vw"
+            height="22vw"
+            borderColor={COLORS.light_pink}
+            borderWidth="3px"
+          />
+          <div>
+            <h2 className="section-title">Konsultacje dietetyczne</h2>
+            <p>
+              Spotkania, których celem jest zniwelowanie dolegliwości związanych
+              z różnorodnymi problemami zdrowotnymi, jakich doświadczasz.
+            </p>
+            <p>Konsultacje mogą pomóc Ci, jeśli chorujesz na:</p>
+            <ul>
+              <li>IBS - zespół jelita drażliwego;</li>
+              <li>chorobę refluksową;</li>
+              <li>nadciśnienie tętnicze;</li>
+              <li>cukrzycę;</li>
+              <li>celiakię;</li>
+              <li>nowotwory;</li>
+              <li>PCOS;</li>
+              <li>miażdżycę;</li>
+              <li>osteoporozę;</li>
+              <li>sarkopenię;</li>
+              <li>dnę moczanową;</li>
+              <li>choroby nerek;</li>
+              <li>anemię; </li>
+              <li>choroby tarczycy - niedoczynność, nadczynność, Hashimoto</li>
+            </ul>
+            <p>
+              oraz jeśli jesteś sportowcem, który potrzebuje wsparcia
+              dietetycznego.
+            </p>
           </div>
         </DescriptionContainer>
       </PsychoElement>
