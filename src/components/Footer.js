@@ -78,7 +78,7 @@ const Footer = () => {
             height="35vw"
           />
           <ContactDetails
-            companyName="Pracownia psychologii i psychodietetyki"
+            companyName="Pracownia Psychologii i Psychodietetyki"
             ownerName="Dominika Szałkowska"
             address="Chojnice, ul. Gdańska 26"
             phoneNumber="881 636 634"
