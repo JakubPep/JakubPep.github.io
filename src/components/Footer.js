@@ -13,6 +13,7 @@ import placeIcon from "../images/svg/fa-place-icon.svg";
 import igIcon from "../images/svg/fa-ig-icon.svg";
 import fbIcon from "../images/svg/fa-fb-icon.svg";
 import MapElement from "./Map";
+import ContactForm from "./form-contact/ContactForm";
 
 
 const Footer = () => {
@@ -69,7 +70,7 @@ const Footer = () => {
   return (
     <>
       <FooterBg className="contact-section">
-        <h2 className="section-title">Zapraszam do kontaktu!</h2>
+        <ContactForm></ContactForm>
         <FooterContainer>
           <CirclePhoto
             className="logo-photo contact-logo"
@@ -82,7 +83,7 @@ const Footer = () => {
             ownerName="Dominika Szałkowska"
             address="Chojnice, ul. Gdańska 26"
             phoneNumber="881 636 634"
-            email="pracownia.klient@gmail.com"
+            email="kontakt@psycho-pracownia.pl"
           />
         </FooterContainer>
         <MapElement />
