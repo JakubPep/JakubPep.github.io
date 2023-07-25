@@ -34,6 +34,8 @@ const Courses = () => {
           <Course courseName='Szkolenie: "Jak pracować z pacjentem, który żyje w ciągłym lęku i zamartwianiu?"' />
           <Course courseName='Szkolenie: "Podstawy porozumienia bez przemocy (NVC) dla psychologów i psychoterapeutów"' />
           <Course courseName='Szkolenie: "Jak dostosować strategię pomocy do sytuacji pacjenta?"' />
+          <Course courseName='Szkolenie: "Samouszkodzenia u dzieci i młodzieży - jak pracować jako psycholog lub psychoterapeuta?"' />
+          <Course courseName='Szkolenie: "Lepsza przyszłość. Pzeciwdziałanie zaburzeniom psychicznym dzieci i młodzieży"' />
         </CourseRight>
       </CoursesContainer>
     </>

@@ -70,7 +70,6 @@ const Footer = () => {
   return (
     <>
       <FooterBg className="contact-section">
-        <h2 className="section-title">Zapraszam do kontaktu!</h2>
         <ContactForm></ContactForm>
         <FooterContainer>
           <CirclePhoto
@@ -84,7 +83,7 @@ const Footer = () => {
             ownerName="Dominika Szałkowska"
             address="Chojnice, ul. Gdańska 26"
             phoneNumber="881 636 634"
-            email="pracownia.klient@gmail.com"
+            email="kontakt@psycho-pracownia.pl"
           />
         </FooterContainer>
         <MapElement />
