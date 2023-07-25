@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.29976a72.css",
-    "main.js": "/static/js/main.965d826a.js",
+    "main.js": "/static/js/main.58273b18.js",
     "static/media/booksPhoto.jpg": "/static/media/booksPhoto.d29dbfb30489d4ca2dde.jpg",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.24b59e12b527ea2e1b67.jpg",
     "static/media/fork-photo.png": "/static/media/fork-photo.91fc8968a5ac99367530.png",
     "static/media/heroPhoto.jpg": "/static/media/heroPhoto.fd096f53319f56b4f7fc.jpg",
+    "static/media/dietetics-photo.png": "/static/media/dietetics-photo.d6b690fc8e5b7549e7cd.png",
     "static/media/pracownia-logo.png": "/static/media/pracownia-logo.c46a2a0f7a263f9e1fa7.png",
     "static/media/brain-photo.png": "/static/media/brain-photo.99054bea2247dab53283.png",
     "static/media/logo-uam.svg": "/static/media/logo-uam.bace46c77c1738074f9d497302545650.svg",
@@ -20,10 +21,10 @@
     "static/media/fa-arrow-right.svg": "/static/media/fa-arrow-right.34ee77d6383aa99efa4a9cbb09cf29c7.svg",
     "static/media/fa-place-icon.svg": "/static/media/fa-place-icon.2e0ef750ef3975644482ba424ba65ae0.svg",
     "main.29976a72.css.map": "/static/css/main.29976a72.css.map",
-    "main.965d826a.js.map": "/static/js/main.965d826a.js.map"
+    "main.58273b18.js.map": "/static/js/main.58273b18.js.map"
   },
   "entrypoints": [
     "static/css/main.29976a72.css",
-    "static/js/main.965d826a.js"
+    "static/js/main.58273b18.js"
   ]
 }
