@@ -13,6 +13,7 @@ import placeIcon from "../images/svg/fa-place-icon.svg";
 import igIcon from "../images/svg/fa-ig-icon.svg";
 import fbIcon from "../images/svg/fa-fb-icon.svg";
 import MapElement from "./Map";
+import ContactForm from "./form-contact/ContactForm";
 
 
 const Footer = () => {
@@ -70,6 +71,7 @@ const Footer = () => {
     <>
       <FooterBg className="contact-section">
         <h2 className="section-title">Zapraszam do kontaktu!</h2>
+        <ContactForm></ContactForm>
         <FooterContainer>
           <CirclePhoto
             className="logo-photo contact-logo"
