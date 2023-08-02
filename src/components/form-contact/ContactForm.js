@@ -13,7 +13,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const endpoint = "https://formsubmit.co/abc@example.com";
+    const endpoint = "https://formsubmit.co/kontakt@psycho-pracownia.pl";
 
     try {
       const formData = new FormData(e.target);
@@ -52,6 +52,7 @@ const ContactForm = () => {
           name="_subject"
           value="Nowa wiadomość z formularza!"
         />
+        <input type="hidden" name="_captcha" value="false"></input>
         <FormDataContainer>
           <input type="text" name="Imie" placeholder="Imię*" required />
           <input type="email" name="Email" placeholder="E-mail*" required />
@@ -84,8 +85,14 @@ const ContactForm = () => {
             </label>
           </div>
         </FormConsentContainer>
-        <button type="submit" disabled={isLoading || isSent} className={`contact-form__button ${isSent ? "contact-form__sent" : ""}`}>
-          {isLoading ? "" : (isSent ? "Przesłano" : "Prześlij")}
+        <button
+          type="submit"
+          disabled={isLoading || isSent}
+          className={`contact-form__button ${
+            isSent ? "contact-form__sent" : ""
+          }`}
+        >
+          {isLoading ? "" : isSent ? "Przesłano" : "Prześlij"}
           {isLoading && <div className="loader"></div>}
         </button>
       </FormContainer>

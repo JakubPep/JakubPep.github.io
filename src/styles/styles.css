@@ -49,3 +49,27 @@ body {
    width: 70vw;
   }
  }
+
+ div.behold-grid-container {
+  padding: 20px 0px;
+  background-color: #DCDEC9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+.behold-grid-title{
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #DF707A;
+  transition: color 0.3s ease;
+}
+
+.behold-grid-title:hover {
+  color: black;
+  /* color: #DFBEC1; */
+}
