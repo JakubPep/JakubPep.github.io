@@ -1,17 +1,48 @@
 import React from "react";
+import brainPhoto from "../images/brain-photo.png";
+import forkPhoto from "../images/fork-photo.png";
 import { CirclePhoto } from "../styledComponents/circlePhoto.styled";
 import {
   DescriptionContainer,
   PsychoElement,
 } from "../styledComponents/psycho.styled";
 import { COLORS } from "../Vars";
-import brainPhoto from "../images/brain-photo.png";
-import forkPhoto from "../images/fork-photo.png";
-import dietPhoto from "../images/dietetics-photo.png";
 
 const PsychoSection = () => {
   return (
     <>
+      <PsychoElement>
+        <DescriptionContainer>
+          <CirclePhoto
+            photoUrl={forkPhoto}
+            width="22vw"
+            height="22vw"
+            borderColor={COLORS.light_pink}
+            borderWidth="3px"
+          />
+          <div>
+            <h2 className="section-title right">
+              Konsultacje psychodietetyczne
+            </h2>
+            <p>
+              Spotkania dotyczą Twoich doświadczeń związanych z odżywianiem się.
+            </p>
+            <p>Konsultacje mogą pomóc Ci, jeśli:</p>
+            <ul>
+              <li>pragniesz odzyskać spokój i radość z jedzenia;</li>
+              <li>
+                nie odpowiada Ci przestrzeganie restrykcyjnych zasad diet;
+              </li>
+              <li>zdarza Ci się jeść pod wpływem silnych emocji lub stresu;</li>
+              <li>doświadczasz zaburzeń odżywiania;</li>
+              <li>negatywnie postrzegasz swoje ciało;</li>
+              <li>potrzebujesz zmiany swoich nawyków żywieniowych;</li>
+              <li>oczekujesz długotrwałych efektów.</li>
+            </ul>
+          </div>
+        </DescriptionContainer>
+      </PsychoElement>
+
       <PsychoElement>
         <DescriptionContainer className="reverse">
           <CirclePhoto
@@ -49,39 +80,9 @@ const PsychoSection = () => {
         </DescriptionContainer>
       </PsychoElement>
 
-      <PsychoElement>
-        <DescriptionContainer>
-          <CirclePhoto
-            photoUrl={forkPhoto}
-            width="22vw"
-            height="22vw"
-            borderColor={COLORS.light_pink}
-            borderWidth="3px"
-          />
-          <div>
-            <h2 className="section-title right">
-              Konsultacje psychodietetyczne
-            </h2>
-            <p>
-              Spotkania dotyczą Twoich doświadczeń związanych z odżywianiem się.
-            </p>
-            <p>Konsultacje mogą pomóc Ci, jeśli:</p>
-            <ul>
-              <li>pragniesz odzyskać spokój i radość z jedzenia;</li>
-              <li>
-                nie odpowiada Ci przestrzeganie restrykcyjnych zasad diet;
-              </li>
-              <li>zdarza Ci się jeść pod wpływem silnych emocji lub stresu;</li>
-              <li>doświadczasz zaburzeń odżywiania;</li>
-              <li>negatywnie postrzegasz swoje ciało;</li>
-              <li>potrzebujesz zmiany swoich nawyków żywieniowych;</li>
-              <li>oczekujesz długotrwałych efektów.</li>
-            </ul>
-          </div>
-        </DescriptionContainer>
-      </PsychoElement>
+      {/* Konsultacje dietetyczne - MOŻE KIEDYŚ WROCA */}
 
-      <PsychoElement>
+      {/* <PsychoElement>
         <DescriptionContainer className="reverse">
           <CirclePhoto
             photoUrl={dietPhoto}
@@ -119,7 +120,7 @@ const PsychoSection = () => {
             </p>
           </div>
         </DescriptionContainer>
-      </PsychoElement>
+      </PsychoElement> */}
     </>
   );
 };

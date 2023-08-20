@@ -36,6 +36,7 @@ const Courses = () => {
           <Course courseName='Szkolenie: "Jak dostosować strategię pomocy do sytuacji pacjenta?"' />
           <Course courseName='Szkolenie: "Samouszkodzenia u dzieci i młodzieży - jak pracować jako psycholog lub psychoterapeuta?"' />
           <Course courseName='Szkolenie: "Lepsza przyszłość. Pzeciwdziałanie zaburzeniom psychicznym dzieci i młodzieży"' />
+          <Course courseName='Szkolenie: "Jak skutecznie pracować z pacjentami z anoreksją?"' />
         </CourseRight>
       </CoursesContainer>
     </>

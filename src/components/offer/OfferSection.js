@@ -104,26 +104,28 @@ const OfferSection = () => {
           setActiveOffer("5");
         }
         break;
-      case "6":
-        setDetails({
-          title: "Na tym spotkaniu:",
-          firstP: "Przeprowadzimy szczegółowy wywiad żywieniowy.",
-          secondP: "Przeanalizujemy problem zdrowotny, z jakim się zmagasz i dopasujemy zalecenia, które pomogą Ci się z nim uporać.",
-          thirdP: "Stworzymy plan dietetyczny dostosowany do Twoich potrzeb.",
-          fourthP:
-            "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
 
-          price: "140 zł",
-          time: "50 minut",
-        });
-        if (activeOffer === "6") {
-          setShowDetails(false);
-          setActiveOffer("");
-        } else {
-          setShowDetails(true);
-          setActiveOffer("6");
-        }
-        break;
+        // DOTYCZY KONSULTACJI DIETETYCZNYCH - MOŻE JESZCZE KIEDYŚ WROCI
+      // case "6":
+      //   setDetails({
+      //     title: "Na tym spotkaniu:",
+      //     firstP: "Przeprowadzimy szczegółowy wywiad żywieniowy.",
+      //     secondP: "Przeanalizujemy problem zdrowotny, z jakim się zmagasz i dopasujemy zalecenia, które pomogą Ci się z nim uporać.",
+      //     thirdP: "Stworzymy plan dietetyczny dostosowany do Twoich potrzeb.",
+      //     fourthP:
+      //       "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
+
+      //     price: "140 zł",
+      //     time: "50 minut",
+      //   });
+      //   if (activeOffer === "6") {
+      //     setShowDetails(false);
+      //     setActiveOffer("");
+      //   } else {
+      //     setShowDetails(true);
+      //     setActiveOffer("6");
+      //   }
+      //   break;
 
       default: {
         setActiveOffer("");
@@ -185,9 +187,9 @@ const OfferSection = () => {
       <OfferDescrContainer>
         <OfferListContainer>
           <h2 className="section-title">Oferta</h2>
-          <Offer value={"1"} offerName="Konsultacja psychologiczna" />
           <Offer value={"2"} offerName="Konsultacja psychodietetyczna" />
-          <Offer value={"6"} offerName="Konsultacja dietetyczna" />
+          <Offer value={"1"} offerName="Konsultacja psychologiczna" />
+          {/* <Offer value={"6"} offerName="Konsultacja dietetyczna" /> */}
           <Offer value={"3"} offerName="Pakiet 4 konsultacji" />
           <Offer value={"4"} offerName="Pakiet 6 konsultacji" />
           <Offer value={"5"} offerName="Warsztaty i szkolenia" />
