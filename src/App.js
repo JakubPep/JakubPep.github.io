@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import MenuDesktop from "./components/menu/MenuDesktop";
 import { useWindowWidth } from "./hooks/useWindowWidth";
 import MenuMobile from "./components/menu/MenuMobile";
+import ReservationButton from "./components/ReservationButton";
 
 function App() {
   const windowWidth = useWindowWidth();
@@ -44,6 +45,7 @@ function App() {
       <OfferSection />
       <SectionDivider id="contact"/>
       <Footer />
+      <ReservationButton />
     </>
   );
 }
