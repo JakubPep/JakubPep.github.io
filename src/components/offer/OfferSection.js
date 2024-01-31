@@ -131,11 +131,12 @@ const OfferSection = () => {
       case "7":
         setDetails({
           title: "Na tym spotkaniu:",
-          firstP: "Przeprowadzimy szczegółowy wywiad żywieniowy.",
-          secondP: "Przeanalizujemy problem zdrowotny, z jakim się zmagasz i dopasujemy zalecenia, które pomogą Ci się z nim uporać.",
-          thirdP: "Stworzymy plan dietetyczny dostosowany do Twoich potrzeb.",
-          fourthP:
-            "Jeśli po pierwszym spotkaniu uznasz, że chcesz kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
+          firstP: "Porozmawiamy o Waszych trudnościach i konfliktach.",
+          secondP: "Zadbamy o Wasze potrzeby celem lepszego zrozumienia w relacji.",
+          thirdP: "Wypracujemy odpowiednie porozumienie między Wami i poszukamy kompromisów.",
+          fourthP: "Określimy czego dotyczy problem.",
+          fifthP:
+            "Jeśli po pierwszym spotkaniu uznacie, że chcecie kontynuować współpracę, ustalimy, jak będzie ona wyglądać oraz określimy jej cel.",
 
           price: "180 zł",
           time: "50 minut",
